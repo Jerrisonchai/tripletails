@@ -15,7 +15,17 @@ const ASSETS = [
   'js/matching.js',
   'js/generator.js',
   'js/ui.js',
-  'js/main.js'
+  'js/main.js',
+  'assets/critters/elephant.png',
+  'assets/critters/giraffe.png',
+  'assets/critters/hippo.png',
+  'assets/critters/monkey.png',
+  'assets/critters/panda.png',
+  'assets/critters/parrot.png',
+  'assets/critters/penguin.png',
+  'assets/critters/pig.png',
+  'assets/critters/rabbit.png',
+  'assets/critters/snake.png'
 ];
 
 self.addEventListener('install', (e) => {

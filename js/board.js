@@ -16,7 +16,7 @@ const Board = {
       densityCurve: [0.80, 0.65, 0.50, 0.35],
       offsetRange: [6, 7, 8, 8],
       brightness: [0.82, 0.88, 0.94, 1.0],
-      typeCount: 10,
+      typeCount: 6,
       totalTileTarget: 54
     },
     hard: {
@@ -26,8 +26,8 @@ const Board = {
       densityCurve: [0.75, 0.65, 0.55, 0.45, 0.35, 0.25, 0.15],
       offsetRange: [10, 9, 8, 7, 6, 5, 4],
       brightness: [0.70, 0.76, 0.82, 0.88, 0.94, 0.97, 1.0],
-      typeCount: 15,
-      totalTileTarget: 135
+      typeCount: 8,
+      totalTileTarget: 120
     }
   },
 

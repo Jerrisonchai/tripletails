@@ -1,30 +1,28 @@
 // tiles.js — TripleTails v1.0
 // Tile data model, critter type definitions, colors
 const Tiles = {
-  // All 15 critter types
+  // 10 Kenney animal types (CC0: kenney.nl/assets/animal-pack)
   TYPES: [
-    'cat', 'dog', 'bunny', 'panda', 'fox',
-    'frog', 'bear', 'owl', 'lion', 'monkey',
-    'unicorn', 'penguin', 'hamster', 'koala', 'raccoon'
+    'elephant', 'giraffe', 'hippo', 'monkey', 'panda',
+    'parrot', 'penguin', 'pig', 'rabbit', 'snake'
   ],
 
   // CSS class names
   CRITTER_CLASSES: {
-    cat: 'critter-cat', dog: 'critter-dog', bunny: 'critter-bunny',
-    panda: 'critter-panda', fox: 'critter-fox', frog: 'critter-frog',
-    bear: 'critter-bear', owl: 'critter-owl', lion: 'critter-lion',
-    monkey: 'critter-monkey', unicorn: 'critter-unicorn', penguin: 'critter-penguin',
-    hamster: 'critter-hamster', koala: 'critter-koala', raccoon: 'critter-raccoon'
+    elephant: 'critter-elephant', giraffe: 'critter-giraffe',
+    hippo: 'critter-hippo', monkey: 'critter-monkey',
+    panda: 'critter-panda', parrot: 'critter-parrot',
+    penguin: 'critter-penguin', pig: 'critter-pig',
+    rabbit: 'critter-rabbit', snake: 'critter-snake'
   },
 
-  // Emoji shorthand for display (not used on tiles — CSS draws them)
+  // Emoji shorthand
   EMOJI: {
-    cat: '🐱', dog: '🐶', bunny: '🐰', panda: '🐼', fox: '🦊',
-    frog: '🐸', bear: '🐻', owl: '🦉', lion: '🦁', monkey: '🐵',
-    unicorn: '🦄', penguin: '🐧', hamster: '🐹', koala: '🐨', raccoon: '🦝'
+    elephant: '🐘', giraffe: '🦒', hippo: '🦛', monkey: '🐵', panda: '🐼',
+    parrot: '🦜', penguin: '🐧', pig: '🐷', rabbit: '🐰', snake: '🐍'
   },
 
-  getClass(type) { return this.CRITTER_CLASSES[type] || 'critter-cat'; },
+  getClass(type) { return this.CRITTER_CLASSES[type] || 'critter-elephant'; },
   getEmoji(type) { return this.EMOJI[type] || '🐱'; },
 
   // Generate a pool of tiles: N total, each type appears in multiples of 3

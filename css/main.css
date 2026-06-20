@@ -13,22 +13,25 @@
   --clr-gold:         #ffd700;
   --clr-gold-dim:     rgba(255,215,0,0.15);
 
-  /* Critter Card Colors */
-  --clr-card-cat:     #ffcc80;
-  --clr-card-dog:     #a5d6a7;
-  --clr-card-bunny:   #f8bbd0;
-  --clr-card-panda:   #e0e0e0;
-  --clr-card-fox:     #ffab91;
-  --clr-card-frog:    #c8e6c9;
-  --clr-card-bear:    #bcaaa4;
-  --clr-card-owl:     #b39ddb;
-  --clr-card-lion:    #ffe082;
+  /* Critter Card Colors (10 Kenney animals) */
+  --clr-card-elephant: #90a4ae;
+  --clr-card-giraffe:  #ffe082;
+  --clr-card-hippo:    #b39ddb;
+  --clr-card-monkey:   #ef9a9a;
+  --clr-card-panda:    #e0e0e0;
+  --clr-card-parrot:   #ef5350;
+  --clr-card-penguin:  #90caf9;
+  --clr-card-pig:      #f8bbd0;
+  --clr-card-rabbit:   #ffcc80;
+  --clr-card-snake:    #a5d6a7;
+  --clr-card-cat:     #90a4ae;
+  --clr-card-dog:     #ffe082;
+  --clr-card-bunny:   #b39ddb;
+  --clr-card-fox:     #ef5350;
+  --clr-card-frog:    #f8bbd0;
+  --clr-card-owl:     #90caf9;
   --clr-card-monkey:  #ef9a9a;
-  --clr-card-unicorn: #e1bee7;
-  --clr-card-penguin: #90caf9;
-  --clr-card-hamster: #ffcc02;
-  --clr-card-koala:   #b0bec5;
-  --clr-card-raccoon: #9e9e9e;
+  --clr-card-panda:   #e0e0e0;
 
   /* UI Surfaces */
   --clr-surface:      rgba(45,90,45,0.85);
