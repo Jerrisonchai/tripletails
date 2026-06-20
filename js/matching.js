@@ -56,6 +56,7 @@ const Matching = {
         return true;
       });
 
+      App.matchCount++;
       this._renderBar();
       UI.updateTileCounter();
       Audio.match();

@@ -66,10 +66,11 @@ const UI = {
 
     // Easy status
     const easyDone = progress.easyCompleted && progress.lastPlayDate === todayDay;
-    document.getElementById('easy-status').textContent = easyDone
-      ? '✓ Completed! +50🪙' : 'Not played';
+    const isAdmin = Storage.isAdmin();
+    document.getElementById('easy-status').textContent = easyDone && !isAdmin
+      ? '✓ Completed! +50🪙' : (easyDone ? '✓ (Admin bypass)' : 'Not played');
     const btnEasy = document.getElementById('btn-easy');
-    if (easyDone) {
+    if (easyDone && !isAdmin) {
       btnEasy.textContent = '✓ DONE';
       btnEasy.style.opacity = '0.5';
       btnEasy.disabled = true;
@@ -82,13 +83,13 @@ const UI = {
     // Hard status
     const hardDone = progress.hardCompleted && progress.lastPlayDate === todayDay;
     const attempts = (progress.lastPlayDate === todayDay) ? progress.attempts : 0;
-    let hardStatus = hardDone ? '🏆 COMPLETED! +200🪙' : `⏳ ${attempts} attempts today`;
+    let hardStatus = hardDone && !isAdmin ? '🏆 COMPLETED! +200🪙' : (hardDone ? '✓ (Admin bypass)' : `⏳ ${attempts} attempts today`);
     if (progress.bestRemaining > 0) {
       hardStatus += ` | 🎯 Best: ${progress.bestRemaining} tiles left`;
     }
     document.getElementById('hard-status').textContent = hardStatus;
     const btnHard = document.getElementById('btn-hard');
-    if (hardDone) {
+    if (hardDone && !isAdmin) {
       btnHard.textContent = '🏆 DONE';
       btnHard.style.opacity = '0.5';
       btnHard.disabled = true;
@@ -154,6 +155,8 @@ const UI = {
 
     document.getElementById('gameover-stats').innerHTML = `
       <p>Tiles remaining: <b>${remaining}</b></p>
+      <p>Matches made: <b>${App.matchCount}</b></p>
+      <p>Time: <b>${UI._formatTime(App.getElapsedTime())}</b></p>
       <p>Attempts today: <b>${attempts}</b></p>
       ${progress.bestRemaining ? `<p>Best: <b>${progress.bestRemaining}</b> tiles left</p>` : ''}
     `;
@@ -165,8 +168,14 @@ const UI = {
 
   showWin() {
     Input.disable();
+    App._stopTimer();
     const progress = Storage.getProgress();
     const difficulty = App.currentDifficulty;
+    const elapsed = App.getElapsedTime();
+
+    // Stop timer
+    const timerEl = document.getElementById('game-timer');
+    if (timerEl) timerEl.textContent = `⏱ ${UI._formatTime(elapsed)}`;
 
     if (difficulty === 'easy') {
       Audio.easyWin();
@@ -190,11 +199,18 @@ const UI = {
     document.getElementById('win-title').textContent = title;
     document.getElementById('win-stats').innerHTML = `
       <p>Difficulty: <b>${difficulty === 'easy' ? 'Easy' : 'EXTREME HARD'}</b></p>
+      <p>Matches: <b>${App.matchCount}</b> | Time: <b>${UI._formatTime(elapsed)}</b></p>
       <p>Coins earned: <b>${difficulty === 'easy' ? '+50' : '+200'} 🪙</b></p>
       ${!progress.firstHardComplete && difficulty === 'hard' ? '<p>🎉 First completion bonus: <b>+500 🪙</b></p>' : ''}
     `;
 
     document.getElementById('overlay-win').style.display = 'flex';
+  },
+
+  _formatTime(seconds) {
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m}:${String(s).padStart(2, '0')}`;
   },
 
   leaveGame() {

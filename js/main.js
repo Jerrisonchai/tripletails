@@ -4,6 +4,8 @@ const App = {
   currentDifficulty: 'easy',
   adminTapCount: 0,
   adminTapTimer: null,
+  gameStartTime: 0,
+  matchCount: 0,
 
   init() {
     Audio.init();
@@ -47,7 +49,9 @@ const App = {
   startGame(difficulty) {
     Audio.resume();
     this.currentDifficulty = difficulty;
-    
+    this.gameStartTime = Date.now();
+    this.matchCount = 0;
+
     // Ensure daily boosters
     const inv = Storage.getInventory();
     if (inv.shuffle < 1) inv.shuffle = 1;
@@ -56,6 +60,26 @@ const App = {
     Storage.setInventory(inv);
 
     UI.showGame(difficulty);
+    this._startTimer();
+  },
+
+  _startTimer() {
+    this._stopTimer();
+    this._timerInterval = setInterval(() => {
+      const elapsed = Math.floor((Date.now() - this.gameStartTime) / 1000);
+      const mins = Math.floor(elapsed / 60);
+      const secs = elapsed % 60;
+      const el = document.getElementById('game-timer');
+      if (el) el.textContent = `⏱ ${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}`;
+    }, 500);
+  },
+
+  _stopTimer() {
+    if (this._timerInterval) clearInterval(this._timerInterval);
+  },
+
+  getElapsedTime() {
+    return Math.floor((Date.now() - this.gameStartTime) / 1000);
   },
 
   leaveGame() {
