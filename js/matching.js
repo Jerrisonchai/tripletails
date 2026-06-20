@@ -18,9 +18,11 @@ const Matching = {
     Audio.land();
 
     this.bar.push({ critterType: tile.critterType, tileId: tile.id });
-    this._renderBar();
 
-    // Update tile counter
+    // Recalculate blocking — removing this tile may unblock lower-layer tiles
+    Board.refreshBlocking();
+
+    this._renderBar();
     UI.updateTileCounter();
 
     // Check for 3-match
