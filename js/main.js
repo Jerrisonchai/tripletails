@@ -110,9 +110,26 @@ const App = {
     if (this.adminTapCount >= 5) {
       this.adminTapCount = 0;
       Storage.setAdmin(true);
-      alert('🔓 Admin mode activated! Daily limits bypassed.');
+
+      // Top up testing resources
+      const coins = Storage.getCoins();
+      Storage.setCoins(coins + 999);
+
+      const inv = Storage.getInventory();
+      inv.shuffle = 99;
+      inv.undo = 99;
+      inv.eject = 99;
+      Storage.setInventory(inv);
+
+      // Update UI
+      UI.updateCoins();
+      UI.updateBoosterBar();
+
+      // Show admin badge
       const gear = document.getElementById('admin-gear');
-      if (gear) gear.style.opacity = '0.5';
+      if (gear) gear.classList.add('admin-active');
+
+      alert('🔓 Admin mode ON — 999 coins, 99 boosters each');
       console.log('Admin mode ON');
     }
     clearTimeout(this.adminTapTimer);

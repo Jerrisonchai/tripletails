@@ -515,6 +515,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity var(--dur-fast);
+}
+#admin-gear.admin-active {
+  opacity: 0.60;
+  color: var(--clr-warning);
+  text-shadow: 0 0 8px rgba(255,183,77,0.5);
+  font-size: 16px;
+}
   user-select: none;
 }
 

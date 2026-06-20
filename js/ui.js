@@ -60,6 +60,10 @@ const UI = {
     document.getElementById('coin-balance').textContent = coins;
     document.getElementById('lb-day').textContent = todayDay;
 
+    // Show admin badge if active
+    const gear = document.getElementById('admin-gear');
+    if (gear && Storage.isAdmin()) gear.classList.add('admin-active');
+
     // Easy status
     const easyDone = progress.easyCompleted && progress.lastPlayDate === todayDay;
     document.getElementById('easy-status').textContent = easyDone
@@ -128,6 +132,10 @@ const UI = {
       if (inv[type] > 0) btn.classList.remove('booster-btn--empty');
       else btn.classList.add('booster-btn--empty');
     });
+  },
+
+  updateCoins() {
+    document.getElementById('coin-balance').textContent = Storage.getCoins();
   },
 
   // ── Overlays ──
