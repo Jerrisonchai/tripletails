@@ -69,9 +69,10 @@
   --space-xl:         clamp(24px, 5vw, 48px);
 
   /* Tile Sizing */
-  --tile-size:        clamp(48px, 12vw, 64px);
+  --tile-size:        44px;
   --tile-size-mini:   clamp(12px, 3vw, 16px);
-  --tile-gap:         clamp(2px, 0.5vw, 4px);
+  --tile-gap:         2px;
+  --tile-radius:      10px;
   --bar-height:       clamp(70px, 15vh, 100px);
   --bar-slot-size:    clamp(44px, 10vw, 56px);
 
@@ -325,7 +326,13 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  /* Forest background layers created via pseudo-elements on body */
+  min-height: 0;
+}
+
+.board-canvas {
+  position: relative;
+  flex-shrink: 0;
+  /* Size set by JS based on tile layout */
 }
 
 .board-message {

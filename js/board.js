@@ -1,20 +1,20 @@
 // board.js — TripleTails v1.0
-// Multi-layer grid rendering, tile DOM creation, board state management
+// Multi-layer grid rendering, canvas-constrained layout, tile DOM
 const Board = {
   container: null,
-  tiles: [],          // All tile objects
-  tileElements: {},   // DOM refs by id
-  tileSizePx: 52,     // Calculated from CSS variable
-  gap: 3,
+  canvas: null,
+  tiles: [],
+  tileElements: {},
+  tileSizePx: 44,
+  gap: 2,
 
-  // Layer configs
   LAYER_CONFIGS: {
     easy: {
       totalLayers: 4,
       baseCols: 6,
       baseRows: 6,
       densityCurve: [0.80, 0.65, 0.50, 0.35],
-      offsetRange: [6, 7, 8, 8],
+      offsetRange: [4, 5, 5, 6],
       brightness: [0.82, 0.88, 0.94, 1.0],
       typeCount: 6,
       totalTileTarget: 54
@@ -24,7 +24,7 @@ const Board = {
       baseCols: 7,
       baseRows: 7,
       densityCurve: [0.75, 0.65, 0.55, 0.45, 0.35, 0.25, 0.15],
-      offsetRange: [10, 9, 8, 7, 6, 5, 4],
+      offsetRange: [6, 6, 5, 5, 4, 3, 3],
       brightness: [0.70, 0.76, 0.82, 0.88, 0.94, 0.97, 1.0],
       typeCount: 8,
       totalTileTarget: 120
@@ -34,31 +34,40 @@ const Board = {
   init(containerEl) {
     this.container = containerEl;
     this._readTileSize();
+    // Create canvas element
+    this.canvas = document.createElement('div');
+    this.canvas.className = 'board-canvas';
+    this.container.innerHTML = '';
+    this.container.appendChild(this.canvas);
   },
 
   _readTileSize() {
     const style = getComputedStyle(document.documentElement);
-    this.tileSizePx = parseInt(style.getPropertyValue('--tile-size')) || 52;
-    this.gap = parseInt(style.getPropertyValue('--tile-gap')) || 3;
+    this.tileSizePx = parseInt(style.getPropertyValue('--tile-size')) || 44;
+    this.gap = parseInt(style.getPropertyValue('--tile-gap')) || 2;
   },
 
   _rand(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   },
 
-  // Generate all layers from a tile pool
   generate(difficulty, tilePool) {
     this._readTileSize();
     const config = this.LAYER_CONFIGS[difficulty];
     this.tiles = [];
     this.tileElements = {};
     let poolIdx = 0;
+    const halfTile = this.tileSizePx / 2;
 
     for (let layer = 0; layer < config.totalLayers; layer++) {
       const cols = config.baseCols - (config.totalLayers > 5 ? layer : 0);
-      const rows = config.baseRows - (config.totalLayers > 5 ? layer : 0);
+      const rows = config.baseRows;
       const density = config.densityCurve[layer];
       const maxOff = config.offsetRange[layer];
+
+      // Each layer gets a slight XY shift for stagger effect
+      const layerShiftX = layer * 3;
+      const layerShiftY = layer * 2;
 
       for (let row = 0; row < rows; row++) {
         for (let col = 0; col < cols; col++) {
@@ -71,10 +80,10 @@ const Board = {
             layer,
             row,
             col,
-            x: col * (this.tileSizePx + this.gap) + this._rand(-maxOff, maxOff),
-            y: row * (this.tileSizePx + this.gap) + this._rand(-maxOff, maxOff),
+            // Absolute position in the virtual canvas
+            x: halfTile + col * (this.tileSizePx + this.gap) + this._rand(-maxOff, maxOff) + layerShiftX,
+            y: halfTile + row * (this.tileSizePx + this.gap) + this._rand(-maxOff, maxOff) + layerShiftY,
             critterType: tilePool[poolIdx++],
-            color: `var(--clr-card-${tilePool[poolIdx - 1]})`,
             blocked: true,
             brightness: config.brightness[layer],
             removed: false
@@ -84,7 +93,6 @@ const Board = {
       }
     }
 
-    // Compute blocking after all tiles placed
     this._computeBlocking();
     return this.tiles;
   },
@@ -99,7 +107,7 @@ const Board = {
         if (above.layer <= tile.layer) continue;
         const dx = Math.abs(above.x - tile.x);
         const dy = Math.abs(above.y - tile.y);
-        if (dx < this.tileSizePx * 0.55 && dy < this.tileSizePx * 0.55) {
+        if (dx < this.tileSizePx * 0.60 && dy < this.tileSizePx * 0.60) {
           tile.blocked = true;
           break;
         }
@@ -107,7 +115,6 @@ const Board = {
     }
   },
 
-  // Recompute blocking for remaining tiles (after tile removed)
   refreshBlocking() {
     const remaining = this.tiles.filter(t => !t.removed);
     const sorted = [...remaining].sort((a, b) => b.layer - a.layer);
@@ -119,7 +126,7 @@ const Board = {
         if (above.layer <= tile.layer) continue;
         const dx = Math.abs(above.x - tile.x);
         const dy = Math.abs(above.y - tile.y);
-        if (dx < this.tileSizePx * 0.55 && dy < this.tileSizePx * 0.55) {
+        if (dx < this.tileSizePx * 0.60 && dy < this.tileSizePx * 0.60) {
           tile.blocked = true;
           break;
         }
@@ -128,25 +135,68 @@ const Board = {
     this._updateDomBlocking();
   },
 
-  // Render all tiles to DOM
-  render() {
-    this.container.innerHTML = '';
-    this.tileElements = {};
+  // Calculate bounding box of all visible tiles
+  _getBounds(tiles) {
+    let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+    for (const t of tiles) {
+      if (t.x < minX) minX = t.x;
+      if (t.x + this.tileSizePx > maxX) maxX = t.x + this.tileSizePx;
+      if (t.y < minY) minY = t.y;
+      if (t.y + this.tileSizePx > maxY) maxY = t.y + this.tileSizePx;
+    }
+    return {
+      minX, minY,
+      width: maxX - minX,
+      height: maxY - minY
+    };
+  },
 
-    // Sort by layer ASC (bottom renders first)
+  render() {
     const sorted = [...this.tiles].filter(t => !t.removed)
       .sort((a, b) => a.layer - b.layer);
 
+    if (!sorted.length) {
+      this.canvas.innerHTML = '';
+      this.canvas.style.width = '0px';
+      this.canvas.style.height = '0px';
+      this.canvas.style.transform = 'none';
+      return;
+    }
+
+    // Calculate bounds of all tiles
+    const bounds = this._getBounds(sorted);
+    const padding = this.tileSizePx;
+    const canvasW = bounds.width + padding * 2;
+    const canvasH = bounds.height + padding * 2;
+
+    // Set canvas size
+    this.canvas.style.width = canvasW + 'px';
+    this.canvas.style.height = canvasH + 'px';
+    this.canvas.innerHTML = '';
+
+    // Calculate scale to fit container
+    const cw = this.container.clientWidth || 360;
+    const ch = this.container.clientHeight || 500;
+    const scaleX = (cw - 16) / canvasW;
+    const scaleY = (ch - 16) / canvasH;
+    const scale = Math.min(scaleX, scaleY, 1.0); // never scale up past 1.0
+    this.canvas.style.transform = `scale(${scale})`;
+    this.canvas.style.transformOrigin = 'center center';
+
+    // Render tiles
     sorted.forEach((tile, idx) => {
       const el = document.createElement('div');
       el.className = `tile ${Tiles.getClass(tile.critterType)}`;
       if (tile.blocked) el.classList.add('tile--blocked');
       else el.classList.add('tile--free');
       el.id = tile.id;
-      el.style.transform = `translate(${tile.x}px, ${tile.y}px)`;
+      // Offset by bounds min + padding to get canvas-relative position
+      const cx = tile.x - bounds.minX + padding;
+      const cy = tile.y - bounds.minY + padding;
+      el.style.transform = `translate(${cx}px, ${cy}px)`;
       el.style.filter = `brightness(${tile.brightness})`;
       el.style.zIndex = tile.layer * 100 + tile.row;
-      el.style.animationDelay = `${idx * 15}ms`;
+      el.style.animationDelay = `${idx * 12}ms`;
       el.style.animation = 'settleIn 400ms ease-out';
       el.dataset.layer = tile.layer;
       el.dataset.critter = tile.critterType;
@@ -156,29 +206,9 @@ const Board = {
         Input.onTileTap(tile, el);
       });
 
-      this.container.appendChild(el);
+      this.canvas.appendChild(el);
       this.tileElements[tile.id] = el;
     });
-
-    // Center the board
-    this._centerBoard(sorted);
-  },
-
-  _centerBoard(tiles) {
-    if (!tiles.length) return;
-    let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
-    for (const t of tiles) {
-      if (t.x < minX) minX = t.x;
-      if (t.x + this.tileSizePx > maxX) maxX = t.x + this.tileSizePx;
-      if (t.y < minY) minY = t.y;
-      if (t.y + this.tileSizePx > maxY) maxY = t.y + this.tileSizePx;
-    }
-    const bw = maxX - minX, bh = maxY - minY;
-    const cw = this.container.clientWidth, ch = this.container.clientHeight;
-    const ox = (cw - bw) / 2 - minX + 10;
-    const oy = (ch - bh) / 2 - minY + 10;
-    this.container.style.paddingLeft = `${Math.max(0, ox)}px`;
-    this.container.style.paddingTop = `${Math.max(0, oy)}px`;
   },
 
   _updateDomBlocking() {
@@ -196,12 +226,10 @@ const Board = {
     }
   },
 
-  // Get a free tile by critter type (for auto-match)
   getFreeTileOfType(type) {
     return this.tiles.find(t => !t.removed && !t.blocked && t.critterType === type) || null;
   },
 
-  // Count remaining tiles
   remainingCount() {
     return this.tiles.filter(t => !t.removed).length;
   },
@@ -210,7 +238,6 @@ const Board = {
     return this.tiles.length;
   },
 
-  // Remove tile from board
   removeTile(tileId) {
     const tile = this.tiles.find(t => t.id === tileId);
     if (tile) {
@@ -225,15 +252,16 @@ const Board = {
     }
   },
 
-  // Shuffle remaining tiles
   shuffle() {
     const remaining = this.tiles.filter(t => !t.removed);
-    // Reassign positions within the same layer
+    const config = this.LAYER_CONFIGS[App.currentDifficulty];
+    const halfTile = this.tileSizePx / 2;
     for (const tile of remaining) {
-      const config = this.LAYER_CONFIGS[App.currentDifficulty];
       const maxOff = config.offsetRange[Math.min(tile.layer, config.offsetRange.length - 1)];
-      tile.x = tile.col * (this.tileSizePx + this.gap) + this._rand(-maxOff, maxOff);
-      tile.y = tile.row * (this.tileSizePx + this.gap) + this._rand(-maxOff, maxOff);
+      const layerShiftX = tile.layer * 3;
+      const layerShiftY = tile.layer * 2;
+      tile.x = halfTile + tile.col * (this.tileSizePx + this.gap) + this._rand(-maxOff, maxOff) + layerShiftX;
+      tile.y = halfTile + tile.row * (this.tileSizePx + this.gap) + this._rand(-maxOff, maxOff) + layerShiftY;
     }
     this._computeBlocking();
     this.render();

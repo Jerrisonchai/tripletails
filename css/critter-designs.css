@@ -1,33 +1,33 @@
 /* critter-designs.css — TripleTails v1.0 */
-/* 10 Kenney Animal Pack round sprites + colored circle backgrounds */
+/* 10 Kenney Animal Pack sprites on rounded rectangle cards */
 /* CC0 licensed: https://kenney.nl/assets/animal-pack */
 
 /* ── Base Tile ── */
 .tile {
   width: var(--tile-size);
   height: var(--tile-size);
-  border-radius: var(--radius-round);
+  border-radius: var(--tile-radius);
   position: absolute;
-  background-size: 85% auto;
-  background-position: center 45%;
+  background-size: 78% auto;
+  background-position: center 48%;
   background-repeat: no-repeat;
   transition: transform var(--dur-fast) var(--ease-smooth),
               filter var(--dur-normal) var(--ease-smooth),
               box-shadow var(--dur-fast) var(--ease-smooth);
   will-change: transform;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.35);
 }
 .tile--blocked {
-  filter: brightness(0.5) saturate(0.6);
+  filter: brightness(0.45) saturate(0.5);
   pointer-events: none;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 .tile--free {
   cursor: pointer;
   animation: glowPulse 2s ease-in-out infinite;
 }
-.tile--free:hover { transform: scale(1.08); z-index: 100; }
-.tile--free:active { transform: scale(0.95); transition: transform 80ms ease-out; }
+.tile--free:hover { transform: scale(1.1); z-index: 100; }
+.tile--free:active { transform: scale(0.93); transition: transform 80ms ease-out; }
 .tile--flying {
   z-index: 9999 !important;
   transition: transform 300ms var(--ease-bounce);
@@ -38,18 +38,18 @@
 .tile--revealing { animation: revealGlow 0.3s ease-out; }
 
 /* ── 10 Kenney Animal Sprites ── */
-.critter-elephant { background-color: var(--clr-card-elephant); background-image: url('assets/critters/elephant.png'); }
-.critter-giraffe  { background-color: var(--clr-card-giraffe);  background-image: url('assets/critters/giraffe.png'); }
-.critter-hippo    { background-color: var(--clr-card-hippo);    background-image: url('assets/critters/hippo.png'); }
-.critter-monkey   { background-color: var(--clr-card-monkey);  background-image: url('assets/critters/monkey.png'); }
-.critter-panda    { background-color: var(--clr-card-panda);    background-image: url('assets/critters/panda.png'); }
-.critter-parrot   { background-color: var(--clr-card-parrot);   background-image: url('assets/critters/parrot.png'); }
-.critter-penguin  { background-color: var(--clr-card-penguin);  background-image: url('assets/critters/penguin.png'); }
-.critter-pig      { background-color: var(--clr-card-pig);      background-image: url('assets/critters/pig.png'); }
-.critter-rabbit   { background-color: var(--clr-card-rabbit);   background-image: url('assets/critters/rabbit.png'); }
-.critter-snake    { background-color: var(--clr-card-snake);    background-image: url('assets/critters/snake.png'); }
+.critter-elephant { background-color: var(--clr-card-elephant); background-image: url('../assets/critters/elephant.png'); }
+.critter-giraffe  { background-color: var(--clr-card-giraffe);  background-image: url('../assets/critters/giraffe.png'); }
+.critter-hippo    { background-color: var(--clr-card-hippo);    background-image: url('../assets/critters/hippo.png'); }
+.critter-monkey   { background-color: var(--clr-card-monkey);  background-image: url('../assets/critters/monkey.png'); }
+.critter-panda    { background-color: var(--clr-card-panda);    background-image: url('../assets/critters/panda.png'); }
+.critter-parrot   { background-color: var(--clr-card-parrot);   background-image: url('../assets/critters/parrot.png'); }
+.critter-penguin  { background-color: var(--clr-card-penguin);  background-image: url('../assets/critters/penguin.png'); }
+.critter-pig      { background-color: var(--clr-card-pig);      background-image: url('../assets/critters/pig.png'); }
+.critter-rabbit   { background-color: var(--clr-card-rabbit);   background-image: url('../assets/critters/rabbit.png'); }
+.critter-snake    { background-color: var(--clr-card-snake);    background-image: url('../assets/critters/snake.png'); }
 
-/* ── Tile in bar (smaller, no glow pulse) ── */
+/* ── Tile in bar ── */
 .bar-slot .tile {
   position: relative;
   animation: none;
