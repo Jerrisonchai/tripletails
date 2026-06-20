@@ -71,7 +71,7 @@
   /* Tile Sizing */
   --tile-size:        44px;
   --tile-size-mini:   clamp(12px, 3vw, 16px);
-  --tile-gap:         2px;
+  --tile-gap:         4px;
   --tile-radius:      10px;
   --bar-height:       clamp(70px, 15vh, 100px);
   --bar-slot-size:    clamp(44px, 10vw, 56px);
