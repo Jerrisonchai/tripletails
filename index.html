@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, target-densitydpi=device-dpi">
+<meta name="theme-color" content="#2d5a2d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="TripleTails">
+<meta name="description" content="Match 3 critters. Restore their tails. Conquer the Enchanted Forest. A daily puzzle game.">
+<title>TripleTails</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css?v=1">
+<link rel="stylesheet" href="css/animations.css?v=1">
+<link rel="stylesheet" href="css/critter-designs.css?v=1">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+<div id="app" class="app-container">
+  <!-- Home Screen -->
+  <div id="screen-home" class="screen screen--active">
+    <div class="home-header">
+      <div class="home-logo">🦊 TripleTails</div>
+      <div class="home-subtitle">Day <span id="streak-day">1</span> 🔥</div>
+      <div class="home-coins">🪙 <span id="coin-balance">0</span></div>
+    </div>
+    <div class="home-content">
+      <div class="game-card" id="card-easy">
+        <div class="game-card-icon">🐣</div>
+        <div class="game-card-label">EASY GAME</div>
+        <div class="game-card-status" id="easy-status">Not played</div>
+        <button class="btn btn-play" id="btn-easy" onclick="App.startGame('easy')">▶ PLAY</button>
+      </div>
+      <div class="game-card hard-card" id="card-hard">
+        <div class="game-card-icon">🔥</div>
+        <div class="game-card-label">EXTREME HARD</div>
+        <div class="game-card-status" id="hard-status">Not played</div>
+        <button class="btn btn-play btn-play--hard" id="btn-hard" onclick="App.startGame('hard')">▶ PLAY</button>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <button class="nav-btn nav-btn--active" data-screen="home">🏠</button>
+      <button class="nav-btn" data-screen="leaderboard">🏆</button>
+      <button class="nav-btn" data-screen="shop">🛒</button>
+      <button class="nav-btn" data-screen="chat">💬</button>
+      <button class="nav-btn" data-screen="collections">🎨</button>
+      <button class="nav-btn" data-screen="info">ℹ️</button>
+    </div>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="screen-game" class="screen">
+    <div class="game-header">
+      <button class="btn-back" onclick="App.leaveGame()">← Back</button>
+      <div class="game-title" id="game-title">🐣 Easy</div>
+      <div class="game-counter" id="tile-counter">0/0</div>
+    </div>
+    <div class="board-container" id="board-container">
+      <div class="board-message" id="board-message">Loading...</div>
+    </div>
+    <div class="bar-container" id="bar-container">
+      <div class="bar-slot" data-slot="0"></div>
+      <div class="bar-slot" data-slot="1"></div>
+      <div class="bar-slot" data-slot="2"></div>
+      <div class="bar-slot" data-slot="3"></div>
+      <div class="bar-slot" data-slot="4"></div>
+      <div class="bar-slot" data-slot="5"></div>
+      <div class="bar-slot" data-slot="6"></div>
+    </div>
+    <div class="booster-bar" id="booster-bar">
+      <button class="booster-btn" id="btn-shuffle" onclick="App.useBooster('shuffle')">🔀<span class="booster-count">0</span></button>
+      <button class="booster-btn" id="btn-undo" onclick="App.useBooster('undo')">↩️<span class="booster-count">0</span></button>
+      <button class="booster-btn" id="btn-eject" onclick="App.useBooster('eject')">📤<span class="booster-count">0</span></button>
+    </div>
+  </div>
+
+  <!-- Leaderboard Screen -->
+  <div id="screen-leaderboard" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="App.showScreen('home')">← Back</button>
+      <div class="screen-title">🏆 Leaderboard</div>
+      <div class="screen-day">Day <span id="lb-day">1</span></div>
+    </div>
+    <div class="screen-body" id="leaderboard-list">
+      <div class="placeholder-text">Coming in Phase 7</div>
+    </div>
+  </div>
+
+  <!-- Shop Screen -->
+  <div id="screen-shop" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="App.showScreen('home')">← Back</button>
+      <div class="screen-title">🛒 Shop</div>
+    </div>
+    <div class="screen-body">
+      <div class="placeholder-text">Coming in Phase 5</div>
+    </div>
+  </div>
+
+  <!-- Chat Screen -->
+  <div id="screen-chat" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="App.showScreen('home')">← Back</button>
+      <div class="screen-title">💬 Alliance Chat</div>
+    </div>
+    <div class="screen-body">
+      <div class="placeholder-text">Coming in Phase 8</div>
+    </div>
+  </div>
+
+  <!-- Collections Screen -->
+  <div id="screen-collections" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="App.showScreen('home')">← Back</button>
+      <div class="screen-title">🎨 Collections</div>
+    </div>
+    <div class="screen-body">
+      <div class="placeholder-text">Coming in Phase 6</div>
+    </div>
+  </div>
+
+  <!-- Info Screen -->
+  <div id="screen-info" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="App.showScreen('home')">← Back</button>
+      <div class="screen-title">📖 Info</div>
+    </div>
+    <div class="info-tabs">
+      <button class="info-tab info-tab--active" data-tab="story">📖 Story</button>
+      <button class="info-tab" data-tab="howto">🎯 How to Win</button>
+      <button class="info-tab" data-tab="boosters">⚡ Boosters</button>
+      <button class="info-tab" data-tab="disclaimer">ℹ️ Info</button>
+    </div>
+    <div class="screen-body info-content" id="info-content">
+      <div class="placeholder-text">Loading...</div>
+    </div>
+  </div>
+
+  <!-- Game Over Overlay -->
+  <div id="overlay-gameover" class="overlay" style="display:none">
+    <div class="overlay-card">
+      <div class="overlay-icon">😵</div>
+      <div class="overlay-title">Game Over!</div>
+      <div class="overlay-stats" id="gameover-stats"></div>
+      <button class="btn btn-play" onclick="App.retryGame()">🔄 Try Again</button>
+      <button class="btn btn-outline" onclick="App.leaveGame()">← Home</button>
+    </div>
+  </div>
+
+  <!-- Win Overlay -->
+  <div id="overlay-win" class="overlay" style="display:none">
+    <div class="overlay-card">
+      <div class="overlay-icon">✨</div>
+      <div class="overlay-title" id="win-title">Nice Work!</div>
+      <div class="overlay-stats" id="win-stats"></div>
+      <button class="btn btn-play" onclick="App.leaveGame()">🎉 Continue</button>
+    </div>
+  </div>
+</div>
+
+<!-- Hidden admin gear -->
+<div id="admin-gear" onclick="App.adminTap()" title="⚙️">⚙️</div>
+
+<script src="js/storage.js?v=1"></script>
+<script src="js/audio.js?v=1"></script>
+<script src="js/tiles.js?v=1"></script>
+<script src="js/board.js?v=1"></script>
+<script src="js/input.js?v=1"></script>
+<script src="js/matching.js?v=1"></script>
+<script src="js/generator.js?v=1"></script>
+<script src="js/ui.js?v=1"></script>
+<script src="js/main.js?v=1"></script>
+</body>
+</html>
