@@ -160,7 +160,7 @@ const Board = {
   // Rectangle intersection check
   _rectsOverlap(ax, ay, bx, by) {
     const s = this.tileSizePx;
-    return ax < bx + s && ax + s > bx && ay < by + s && ay + by > by;
+    return ax < bx + s && ax + s > bx && ay < by + s && ay + s > by;
   },
 
   generate(difficulty, tilePool) {
@@ -238,9 +238,10 @@ const Board = {
   },
 
   _computeBlocking() {
-    // Group tiles by layer
+    // Only consider non-removed tiles for blocking
     const byLayer = {};
     for (const tile of this.tiles) {
+      if (tile.removed) continue;
       if (!byLayer[tile.layer]) byLayer[tile.layer] = [];
       byLayer[tile.layer].push(tile);
     }
