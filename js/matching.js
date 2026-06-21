@@ -92,24 +92,39 @@ const Matching = {
   _checkWin() {
     const remaining = Board.remainingCount();
     if (remaining === 0 && this.bar.length === 0) {
-      // Perfect clear celebration
-      if (Board.tiles.length === 0) Celebrate.perfectClear();
+      // Win! All tiles cleared from board and bar
       setTimeout(() => UI.showWin(), 300);
+    } else if (remaining === 0 && this.bar.length > 0) {
+      // Board empty but bar has leftover tiles — check if matchable
+      const barCounts = {};
+      for (const item of this.bar) {
+        barCounts[item.critterType] = (barCounts[item.critterType] || 0) + 1;
+      }
+      const hasMatch = Object.values(barCounts).some(c => c >= this.MATCH_COUNT);
+      if (!hasMatch) {
+        // No match possible, no tiles to add — show stuck game over
+        setTimeout(() => UI.showGameOver(), 400);
+      }
     }
   },
 
   _checkGameOver() {
+    const allRemaining = Board.remainingCount();
+    const counts = {};
+    for (const item of this.bar) {
+      counts[item.critterType] = (counts[item.critterType] || 0) + 1;
+    }
+    const hasMatch = Object.values(counts).some(c => c >= 3);
+    
+    // Board-empty stuck check: no tiles left + no match possible = game over
+    if (allRemaining === 0 && this.bar.length > 0 && !hasMatch) {
+      setTimeout(() => UI.showGameOver(), 400);
+      return;
+    }
+    
     if (this.bar.length >= this.MAX_SLOTS) {
-      // Check if any triple is possible
-      const counts = {};
-      for (const item of this.bar) {
-        counts[item.critterType] = (counts[item.critterType] || 0) + 1;
-      }
-      const hasMatch = Object.values(counts).some(c => c >= 3);
-      
       if (!hasMatch) {
         // Check if there's a 3-match on board that could save us
-        // (Simplified: just count free tiles per type)
         const freeTiles = Board.tiles.filter(t => !t.removed && !t.blocked);
         const boardCounts = {};
         for (const t of freeTiles) {

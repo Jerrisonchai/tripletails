@@ -10,7 +10,7 @@ const Board = {
   gap: 4,
 
   LAYER_CONFIGS: {
-    easy: { totalLayers: 2, typeCount: 3, totalTileTarget: 21 },
+    easy: { totalLayers: 2, typeCount: 7, totalTileTarget: 21 },
     hard: { totalLayers: 7, typeCount: 10, totalTileTarget: 120 }
   },
 
