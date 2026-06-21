@@ -46,9 +46,9 @@ const Celebrate = {
   },
 
   combo(count) {
-    if (count >= 10) this._comboFlash('#ff0', 0.6);
-    else if (count >= 5) this._comboFlash('#ff922b', 0.4);
-    else if (count >= 3) this._comboFlash('#4d96ff', 0.3);
+    if (count >= 15) this._comboFlash('#ff0', 0.5);
+    else if (count >= 10) this._comboFlash('#ff922b', 0.3);
+    else if (count >= 7) this._comboFlash('#4d96ff', 0.2);
   },
 
   perfectClear() {

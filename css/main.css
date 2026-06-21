@@ -518,7 +518,7 @@ body {
 /* ── Admin Gear ── */
 #admin-gear {
   position: absolute;
-  bottom: 8px;
+  top: 8px;
   right: 8px;
   font-size: 14px;
   opacity: 0.10;
@@ -981,11 +981,9 @@ body {
   z-index: 9998;
 }
 /* Win overlay enhancement for celebrations */
-#overlay-win {
-  z-index: 100;
-}
 #overlay-win .overlay-card {
   animation: celebrationBounce 0.6s var(--ease-bounce);
+  z-index: 2000;
 }
 @keyframes celebrationBounce {
   0% { transform: scale(0.5); opacity: 0; }

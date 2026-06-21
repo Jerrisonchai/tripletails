@@ -76,6 +76,8 @@ const Chat = {
     ],
   },
 
+  _ready: false,
+
   async init() {
     // Load 20 alliance bots from bots.json
     try {
@@ -107,6 +109,15 @@ const Chat = {
 
     // Check for morning greeting (8am-10am, once per day)
     this._checkDailyGreeting();
+
+    // Seed chat with welcome messages if empty
+    if (this._messages.length === 0) {
+      this.botMessage('morning');
+      setTimeout(() => this.botMessage('bot_chatter'), 2000);
+      setTimeout(() => this.botMessage('bot_chatter'), 5000);
+    }
+
+    this._ready = true;
 
     // Start idle bot chatter loop
     this.scheduleIdleChatter();

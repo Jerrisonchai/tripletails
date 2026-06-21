@@ -7,6 +7,7 @@ const Matching = {
 
   init() {
     this.bar = [];
+    this._lastMatchTime = 0;
     this._renderBar();
   },
 
