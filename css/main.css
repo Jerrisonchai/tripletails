@@ -557,3 +557,152 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ── Shop Screen ── */
+.shop-coins {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--clr-accent);
+  margin-left: auto;
+}
+.shop-tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: var(--clr-bg-mid);
+  flex-shrink: 0;
+}
+.shop-tab {
+  flex: 1;
+  padding: 10px 8px;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--clr-fg-mid);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: color var(--dur-fast), border-color var(--dur-fast);
+}
+.shop-tab--active {
+  color: var(--clr-fg);
+  border-bottom-color: var(--clr-accent);
+}
+.shop-body { overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.shop-panel { display: none; padding: 16px; }
+.shop-panel--active { display: block; }
+.shop-section-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--clr-fg);
+}
+.shop-subtitle {
+  font-size: 12px;
+  color: var(--clr-fg-mid);
+  margin-bottom: 14px;
+}
+.shop-item {
+  background: var(--clr-surface);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  margin-bottom: 10px;
+}
+.shop-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.shop-item-name {
+  font-weight: 700;
+  font-size: 14px;
+}
+.shop-item-owned {
+  font-size: 11px;
+  color: var(--clr-fg-mid);
+}
+.shop-packs {
+  display: flex;
+  gap: 6px;
+}
+.shop-pack {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 4px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, #2a2d3a, #1e2030);
+  border: 1px solid rgba(255,255,255,0.08);
+  cursor: pointer;
+  transition: transform var(--dur-fast), border-color var(--dur-fast);
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--clr-fg);
+}
+.shop-pack:hover { border-color: var(--clr-accent); }
+.shop-pack:active { transform: scale(0.95); }
+.shop-pack--locked {
+  opacity: 0.35;
+  pointer-events: none;
+  border-color: rgba(255,100,100,0.15);
+}
+.shop-pack-size { font-weight: 700; font-size: 14px; }
+.shop-pack-price { font-size: 11px; color: var(--clr-accent); }
+
+/* Coin display */
+.coin-big-display {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  font-family: var(--font-display);
+  color: var(--clr-accent);
+  padding: 16px 0;
+}
+.shop-earn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.earn-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: var(--clr-surface);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+}
+.earn-amount {
+  font-weight: 700;
+  color: var(--clr-accent);
+}
+
+/* Confirm dialog */
+.overlay-card--small { max-width: 320px; padding: 24px; }
+.confirm-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+.confirm-buttons .btn { flex: 1; }
+.confirm-price {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--clr-accent);
+  text-align: center;
+  margin: 8px 0;
+}
+.confirm-balance {
+  font-size: 12px;
+  color: var(--clr-fg-mid);
+  text-align: center;
+}
+.overlay-text {
+  font-size: 14px;
+  color: var(--clr-fg);
+  text-align: center;
+}

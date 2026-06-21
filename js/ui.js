@@ -23,6 +23,7 @@ const UI = {
 
     if (name === 'home') this.updateHome();
     if (name === 'leaderboard') this._renderLeaderboardPlaceholder();
+    if (name === 'shop') Shop.refresh();
   },
 
   _bindNavButtons() {
