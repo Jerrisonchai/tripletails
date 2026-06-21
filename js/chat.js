@@ -172,12 +172,9 @@ const Chat = {
     const today = App._gameDay();
     const lastGreet = Storage.get('chat_lastGreeting');
     if (lastGreet === today) return;
-    // Always greet on first load of the day (8am-10pm window)
-    const hour = new Date().getHours();
-    if (hour >= 8 && hour < 22) {
-      this.botMessage('morning');
-      Storage.set('chat_lastGreeting', today);
-    }
+    // Greet once per day on first visit, any time
+    this.botMessage('morning');
+    Storage.set('chat_lastGreeting', today);
   },
 
   // Trigger bot messages for game events

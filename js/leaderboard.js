@@ -26,7 +26,7 @@ const Leaderboard = {
     if (!this._bots || !this._bots.length) return [];
 
     const today = App._gameDay();
-    // Seed PRNG from today's date
+    // Seed PRNG from today's date — same bots play every day, same scores
     let seed = today * 2654435761 + 20260620;
     function rand() {
       seed = (seed * 16807 + 0) % 2147483647;
@@ -37,11 +37,9 @@ const Leaderboard = {
     const leaderboardBots = this._bots.filter(b => b.group !== 'alliance');
 
     for (const bot of leaderboardBots) {
-      // Determine if bot completes today
       if (bot.group === 'mia') {
-        if (rand() > bot.completionChance) continue; // didn't play
+        if (rand() > bot.completionChance) continue;
       }
-      // Lazy bots have 85% chance to play
       if (bot.group === 'lazy' && rand() > 0.85) continue;
 
       const time = Math.floor(bot.windowMin + rand() * (bot.windowMax - bot.windowMin));
@@ -55,28 +53,20 @@ const Leaderboard = {
       });
     }
 
-    // Sort by completion time
-    rankings.sort((a, b) => a.time - b.time);
-
-    // Apply player time with ranking boost
+    // Insert player at their actual rank (pure time competition, no boost)
     if (playerCompleted && playerTime > 0) {
-      const now = Date.now();
-      // 8am MYT reference
-      const msSince8am = now - today * 86400000 - 8 * 3600 * 1000;
-
-      let playerRank;
-      if (msSince8am < 1800000) { playerRank = Math.min(3, rankings.length); }      // Before 8:30am → top 3
-      else if (msSince8am < 7200000) { playerRank = Math.min(10, rankings.length); }  // Before 10am → top 10
-      else { playerRank = Math.min(20 + Math.floor(rand() * 30), rankings.length); }   // After → competitive
-
-      rankings.splice(playerRank, 0, {
+      const playerEntry = {
         id: 0,
         name: 'YOU',
         group: 'player',
         animal: 'rabbit',
         time: playerTime,
         isPlayer: true,
-      });
+      };
+      // Find where player's time places them
+      let insertAt = rankings.findIndex(r => r.time > playerTime);
+      if (insertAt === -1) insertAt = rankings.length;
+      rankings.splice(insertAt, 0, playerEntry);
     }
 
     this._rankings = rankings;
