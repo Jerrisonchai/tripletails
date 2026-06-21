@@ -57,6 +57,11 @@ const Matching = {
       });
 
       App.matchCount++;
+      App.comboCount++;
+
+      // Combo celebration at thresholds
+      Celebrate.combo(App.comboCount);
+
       this._renderBar();
       UI.updateTileCounter();
       Audio.match();
@@ -75,7 +80,8 @@ const Matching = {
   _checkWin() {
     const remaining = Board.remainingCount();
     if (remaining === 0 && this.bar.length === 0) {
-      // All tiles cleared + bar cleared = WIN!
+      // Perfect clear celebration
+      if (Board.tiles.length === 0) Celebrate.perfectClear();
       setTimeout(() => UI.showWin(), 300);
     }
   },

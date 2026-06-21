@@ -209,6 +209,10 @@ const UI = {
     `;
 
     document.getElementById('overlay-win').style.display = 'flex';
+
+    // Celebration effects
+    const isFirstHard = !progress.firstHardComplete && difficulty === 'hard';
+    Celebrate.win(difficulty, isFirstHard);
   },
 
   _formatTime(seconds) {

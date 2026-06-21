@@ -95,6 +95,7 @@ const Collections = {
     unlocked[key] = true;
     Storage.set('collectionsUnlocked', unlocked);
     Audio.purchase();
+    Celebrate.collectionUnlock(col.name);
     return { success: true };
   },
 

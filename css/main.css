@@ -969,3 +969,35 @@ body {
   font-size: 13px !important;
   min-width: auto !important;
 }
+
+/* ── Celebration Effects (Phase 9) ── */
+#celebrate-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9998;
+}
+/* Win overlay enhancement for celebrations */
+#overlay-win {
+  z-index: 100;
+}
+#overlay-win .overlay-card {
+  animation: celebrationBounce 0.6s var(--ease-bounce);
+}
+@keyframes celebrationBounce {
+  0% { transform: scale(0.5); opacity: 0; }
+  50% { transform: scale(1.05); }
+  70% { transform: scale(0.95); }
+  100% { transform: scale(1); opacity: 1; }
+}
+/* Win title glow */
+#win-title {
+  animation: titleGlow 1.5s ease-in-out infinite;
+}
+@keyframes titleGlow {
+  0%, 100% { text-shadow: 0 0 10px rgba(255,215,0,0.3); }
+  50% { text-shadow: 0 0 25px rgba(255,215,0,0.7), 0 0 50px rgba(255,215,0,0.3); }
+}

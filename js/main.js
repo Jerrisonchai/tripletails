@@ -6,6 +6,7 @@ const App = {
   adminTapTimer: null,
   gameStartTime: 0,
   matchCount: 0,
+  comboCount: 0,
 
   init() {
     Audio.init();
@@ -18,6 +19,7 @@ const App = {
     Collections.init();
     Leaderboard.init();
     Chat.init();
+    Celebrate.init();
     this._setupAdminGear();
     console.log('🦊 TripleTails v1.0 initialized');
     console.log(`   Day ${this._gameDay()}, Seed: ${Generator._seed}`);
@@ -50,6 +52,7 @@ const App = {
     this.currentDifficulty = difficulty;
     this.gameStartTime = Date.now();
     this.matchCount = 0;
+    this.comboCount = 0;
 
     // Ensure daily free boosters
     Boosters._assignFreeDaily();
