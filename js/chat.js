@@ -107,6 +107,9 @@ const Chat = {
 
     // Check for morning greeting (8am-10am, once per day)
     this._checkDailyGreeting();
+
+    // Start idle bot chatter loop
+    this.scheduleIdleChatter();
   },
 
   getMessages() { return this._messages; },
@@ -158,12 +161,46 @@ const Chat = {
     const today = App._gameDay();
     const lastGreet = Storage.get('chat_lastGreeting');
     if (lastGreet === today) return;
-
+    // Always greet on first load of the day (8am-10pm window)
     const hour = new Date().getHours();
-    if (hour >= 8 && hour < 10) {
+    if (hour >= 8 && hour < 22) {
       this.botMessage('morning');
       Storage.set('chat_lastGreeting', today);
     }
+  },
+
+  // Trigger bot messages for game events
+  onGameStart(difficulty) {
+    this.botMessage('game_start');
+  },
+  onEasyWin(time) {
+    this.botMessage('easy_win', { time });
+  },
+  onHardWin(time) {
+    this.botMessage('hard_win', { time });
+    // Another bot might boast too
+    if (Math.random() < 0.4) {
+      setTimeout(() => this.botMessage('boast', { time }), 3000 + Math.random() * 5000);
+    }
+  },
+  onGameOver() {
+    if (Math.random() < 0.3) {
+      this.botMessage('hard_struggling');
+    }
+  },
+  onCollectionUnlock(name) {
+    this.botMessage('collection_unlock', { collection: name });
+  },
+
+  // Idle bot chatter (call periodically during game)
+  scheduleIdleChatter() {
+    const delay = 30000 + Math.random() * 120000; // 30s-2.5min
+    setTimeout(() => {
+      if (document.getElementById('screen-game')?.classList.contains('screen--active')) {
+        this.botMessage('idle');
+      }
+      this.scheduleIdleChatter();
+    }, delay);
   },
 
   _save() {

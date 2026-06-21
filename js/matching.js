@@ -57,7 +57,15 @@ const Matching = {
       });
 
       App.matchCount++;
-      App.comboCount++;
+
+      // Combo: count consecutive matches within 3s window
+      const now = Date.now();
+      if (!this._lastMatchTime || (now - this._lastMatchTime) < 3000) {
+        App.comboCount++;
+      } else {
+        App.comboCount = 1;
+      }
+      this._lastMatchTime = now;
 
       // Combo celebration at thresholds
       Celebrate.combo(App.comboCount);
@@ -71,6 +79,9 @@ const Matching = {
 
       // Check win
       setTimeout(() => this._checkWin(), 100);
+
+      // Check for additional matches in remaining bar tiles
+      setTimeout(() => this._checkMatches(), 150);
     } else {
       // Check game over
       this._checkGameOver();

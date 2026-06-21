@@ -119,6 +119,7 @@ const UI = {
     document.getElementById('game-title').textContent = difficulty === 'easy' ? '🐣 Easy' : '🔥 Extreme Hard (7 layers)';
     this.showScreen('game');
     Input.enable();
+    Chat.onGameStart(difficulty);
   },
 
   updateTileCounter() {
@@ -167,6 +168,7 @@ const UI = {
 
     document.getElementById('overlay-gameover').style.display = 'flex';
     document.querySelector('.bar-container').classList.add('gameover-shake');
+    Chat.onGameOver();
     setTimeout(() => document.querySelector('.bar-container').classList.remove('gameover-shake'), 500);
   },
 
@@ -181,20 +183,28 @@ const UI = {
     const timerEl = document.getElementById('game-timer');
     if (timerEl) timerEl.textContent = `⏱ ${UI._formatTime(elapsed)}`;
 
+    // Check firstHard BEFORE mutating
+    const wasFirstHard = difficulty === 'hard' && !progress.firstHardComplete;
+
     if (difficulty === 'easy') {
       Audio.easyWin();
       progress.easyCompleted = true;
       Storage.addCoins(50);
+      Chat.onEasyWin(UI._formatTime(elapsed));
     } else {
       Audio.hardWin();
       progress.hardCompleted = true;
       progress.attempts = (progress.attempts || 0) + 1;
       Storage.addCoins(200);
+      Chat.onHardWin(UI._formatTime(App.getElapsedTime()));
       if (!progress.firstHardComplete) {
         progress.firstHardComplete = true;
         Storage.addCoins(500);
       }
     }
+
+    // Store completion for leaderboard
+    progress.lastCompletionTime = App.getElapsedTime();
 
     progress.lastPlayDate = App._gameDay();
     Storage.setProgress(progress);
@@ -205,14 +215,13 @@ const UI = {
 <p>Difficulty: <b>${difficulty === 'easy' ? 'Easy' : 'EXTREME HARD (7 layers)'}</b></p>
       <p>Matches: <b>${App.matchCount}</b> | Time: <b>${UI._formatTime(elapsed)}</b></p>
       <p>Coins earned: <b>${difficulty === 'easy' ? '+50' : '+200'} 🪙</b></p>
-      ${!progress.firstHardComplete && difficulty === 'hard' ? '<p>🎉 First completion bonus: <b>+500 🪙</b></p>' : ''}
+      ${wasFirstHard ? '<p>🎉 First completion bonus: <b>+500 🪙</b></p>' : ''}
     `;
 
     document.getElementById('overlay-win').style.display = 'flex';
 
     // Celebration effects
-    const isFirstHard = !progress.firstHardComplete && difficulty === 'hard';
-    Celebrate.win(difficulty, isFirstHard);
+    Celebrate.win(difficulty, wasFirstHard);
   },
 
   _formatTime(seconds) {
@@ -290,7 +299,8 @@ const UI = {
     const container = document.getElementById('leaderboard-list');
     if (!container) return;
     const progress = Storage.getProgress();
-    const rankings = Leaderboard.generateRankings(progress.hardCompleted, 0);
+    const completionTime = progress.lastCompletionTime || 0;
+    const rankings = Leaderboard.generateRankings(progress.hardCompleted, completionTime);
     document.getElementById('lb-day').textContent = App._gameDay();
     let filtered = rankings;
     if (filter && filter !== 'all') filtered = rankings.filter(r => r.group === filter || r.isPlayer);
