@@ -788,3 +788,98 @@ body {
   opacity: 0.4;
   pointer-events: none;
 }
+
+/* ── Leaderboard (Phase 7) ── */
+.leaderboard-header { flex-shrink: 0; }
+.leaderboard-tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background: var(--clr-bg-mid);
+}
+.lb-tab {
+  flex: 1;
+  padding: 8px 4px;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--clr-fg-mid);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: color var(--dur-fast), border-color var(--dur-fast);
+}
+.lb-tab--active {
+  color: var(--clr-fg);
+  border-bottom-color: var(--clr-accent);
+}
+.lb-body {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0;
+}
+.lb-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  font-family: var(--font-body);
+  font-size: 13px;
+}
+.lb-row--player {
+  background: linear-gradient(90deg, rgba(255,215,0,0.1), transparent);
+  border-left: 3px solid var(--clr-accent);
+}
+.lb-rank {
+  width: 32px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--clr-fg-mid);
+  flex-shrink: 0;
+}
+.lb-rank--medal { font-size: 16px; }
+.lb-animal {
+  width: 24px;
+  text-align: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.lb-name {
+  flex: 1;
+  font-weight: 500;
+  color: var(--clr-fg);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lb-group {
+  width: 24px;
+  text-align: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.lb-time {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--clr-accent);
+  font-weight: 600;
+  flex-shrink: 0;
+  min-width: 40px;
+  text-align: right;
+}
+.lb-player-stub {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: rgba(255,215,0,0.08);
+  border-top: 1px solid rgba(255,215,0,0.15);
+  font-size: 13px;
+  flex-shrink: 0;
+}
+.lb-player-stub .lb-time {
+  color: var(--clr-fg-mid);
+}

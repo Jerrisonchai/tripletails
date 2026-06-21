@@ -239,8 +239,7 @@ const UI = {
   },
 
   _renderLeaderboardPlaceholder() {
-    const el = document.getElementById('leaderboard-list');
-    if (el) el.innerHTML = '<div class="placeholder-text">🏆 Leaderboard<br><small>Coming in Phase 7</small></div>';
+    this.renderLeaderboard();
   },
 
   renderCollections() {
@@ -281,4 +280,37 @@ const UI = {
     }
     container.innerHTML = html;
   },
+
+  renderLeaderboard(filter) {
+    const container = document.getElementById('leaderboard-list');
+    if (!container) return;
+    const progress = Storage.getProgress();
+    const rankings = Leaderboard.generateRankings(progress.hardCompleted, 0);
+    document.getElementById('lb-day').textContent = App._gameDay();
+    let filtered = rankings;
+    if (filter && filter !== 'all') filtered = rankings.filter(r => r.group === filter || r.isPlayer);
+    document.querySelectorAll('.lb-tab').forEach(tab => {
+      tab.classList.toggle('lb-tab--active', tab.dataset.filter === (filter || 'all'));
+      tab.onclick = () => this.renderLeaderboard(tab.dataset.filter);
+    });
+    if (filtered.length === 0) { container.innerHTML = '<div class="placeholder-text">No entries for this group yet</div>'; return; }
+    const stub = document.getElementById('lb-player-stub');
+    if (stub) stub.style.display = filtered.some(r => r.isPlayer) ? 'none' : 'flex';
+    const am = { fox:'🦊',owl:'🦉',deer:'🦌',bear:'🐻',wolf:'🐺',cat:'🐱',dog:'🐶',bird:'🐦',frog:'🐸',mouse:'🐭',duck:'🦆',turtle:'🐢',hamster:'🐹',koala:'🐨',otter:'🦦',badger:'🦡',raccoon:'🦝',squirrel:'🐿',hedgehog:'🦔',bat:'🦇' };
+    const medals = ['🥇','🥈','🥉'];
+    let html = '';
+    filtered.forEach(entry => {
+      const r = rankings.indexOf(entry);
+      const rd = r < 3 ? medals[r] : '#' + (r + 1);
+      html += '<div class="lb-row' + (entry.isPlayer ? ' lb-row--player' : '') + '">';
+      html += '<span class="lb-rank' + (r < 3 ? ' lb-rank--medal' : '') + '">' + rd + '</span>';
+      html += '<span class="lb-animal">' + (am[entry.animal] || '🐾') + '</span>';
+      html += '<span class="lb-name">' + entry.name + (entry.isPlayer ? ' <small>👈</small>' : '') + '</span>';
+      html += '<span class="lb-group">' + (Leaderboard.GROUP_ICONS[entry.group] || '') + '</span>';
+      html += '<span class="lb-time">' + Leaderboard.formatTime(entry.time) + '</span>';
+      html += '</div>';
+    });
+    container.innerHTML = html;
+  },
+
 };
