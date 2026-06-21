@@ -1,5 +1,6 @@
-// board.js — TripleTails v1.4
+// board.js — TripleTails v1.5
 // Geometric grid layers, rectangle-intersection blocking, debug logging
+// Phase 3: 7-layer hard mode with solver-verified solvability
 const Board = {
   container: null,
   canvas: null,
@@ -10,7 +11,7 @@ const Board = {
 
   LAYER_CONFIGS: {
     easy: { totalLayers: 2, typeCount: 3, totalTileTarget: 21 },
-    hard: { totalLayers: 5, typeCount: 8, totalTileTarget: 90 }
+    hard: { totalLayers: 7, typeCount: 10, totalTileTarget: 120 }
   },
 
   // Geometric pattern generators — return array of {row,col} positions
@@ -95,16 +96,17 @@ const Board = {
       if (isBottom) { rows = 5; cols = 5; }
       else          { rows = 3; cols = 3; }
     } else {
-      // 5-layer game (hard)
+      // 7-layer game (hard): bigger boards, more tiles
       switch (pattern) {
         case 'square':
-          if (isBottom) { rows = this._rand(5, 7); cols = this._rand(5, 7); }
+          if (isBottom) { rows = this._rand(6, 8); cols = this._rand(6, 8); }
           else if (layerIdx === totalLayers - 1) { rows = this._rand(2, 3); cols = this._rand(2, 3); }
+          else if (layerIdx <= 2) { rows = this._rand(4, 6); cols = this._rand(4, 6); }
           else { rows = this._rand(3, 5); cols = this._rand(3, 5); }
           break;
-        case 'lines': rows = this._rand(2, 4); cols = this._rand(5, 8); break;
-        case 'ring':  rows = this._rand(4, 6); cols = this._rand(4, 6); break;
-        case 'cross':  rows = this._rand(4, 6); cols = this._rand(4, 6); break;
+        case 'lines': rows = this._rand(3, 5); cols = this._rand(5, 8); break;
+        case 'ring':  rows = this._rand(5, 7); cols = this._rand(5, 7); break;
+        case 'cross':  rows = this._rand(5, 7); cols = this._rand(5, 7); break;
         default: rows = 4; cols = 4;
       }
     }

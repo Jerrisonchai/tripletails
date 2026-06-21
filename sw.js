@@ -1,5 +1,5 @@
 // sw.js — TripleTails v1.0 Service Worker
-const CACHE_NAME = 'tripletails-v8';
+const CACHE_NAME = 'tripletails-v9';
 const ASSETS = [
   '.',
   'index.html',

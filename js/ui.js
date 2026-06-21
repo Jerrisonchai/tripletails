@@ -113,7 +113,7 @@ const UI = {
     UI.updateTileCounter();
     UI.updateBoosterBar();
 
-    document.getElementById('game-title').textContent = difficulty === 'easy' ? '🐣 Easy' : '🔥 Extreme Hard';
+    document.getElementById('game-title').textContent = difficulty === 'easy' ? '🐣 Easy' : '🔥 Extreme Hard (7 layers)';
     this.showScreen('game');
     Input.enable();
   },
@@ -198,7 +198,7 @@ const UI = {
     const title = difficulty === 'easy' ? '✨ Nice Work!' : '🌟 YOU DID IT!';
     document.getElementById('win-title').textContent = title;
     document.getElementById('win-stats').innerHTML = `
-      <p>Difficulty: <b>${difficulty === 'easy' ? 'Easy' : 'EXTREME HARD'}</b></p>
+<p>Difficulty: <b>${difficulty === 'easy' ? 'Easy' : 'EXTREME HARD (7 layers)'}</b></p>
       <p>Matches: <b>${App.matchCount}</b> | Time: <b>${UI._formatTime(elapsed)}</b></p>
       <p>Coins earned: <b>${difficulty === 'easy' ? '+50' : '+200'} 🪙</b></p>
       ${!progress.firstHardComplete && difficulty === 'hard' ? '<p>🎉 First completion bonus: <b>+500 🪙</b></p>' : ''}
