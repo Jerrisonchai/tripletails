@@ -12,9 +12,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css?v=14">
-<link rel="stylesheet" href="css/animations.css?v=14">
-<link rel="stylesheet" href="css/critter-designs.css?v=14">
+<link rel="stylesheet" href="css/main.css?v=15">
+<link rel="stylesheet" href="css/animations.css?v=15">
+<link rel="stylesheet" href="css/critter-designs.css?v=15">
 <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -131,17 +131,23 @@
       </div>
     </div>
   </div> Screen -->
+  <div   <!-- Chat Screen -->
   <div id="screen-chat" class="screen">
     <div class="screen-header">
       <button class="btn-back" onclick="App.showScreen('home')">← Back</button>
       <div class="screen-title">💬 Alliance Chat</div>
+      <div class="chat-bot-count">5 allies</div>
     </div>
-    <div class="screen-body">
-      <div class="placeholder-text">Coming in Phase 8</div>
+    <div class="chat-messages" id="chat-messages">
+      <div class="placeholder-text">Loading...</div>
+    </div>
+    <div class="chat-input-area">
+      <input type="text" class="chat-input" id="chat-input" placeholder="Say something..." maxlength="200">
+      <button class="btn btn-play chat-send" id="chat-send" onclick="UI.sendChat()">Send</button>
     </div>
   </div>
 
-  <!-- Collections Screen -->
+<!-- Collections Screen -->
   <div id="screen-collections" class="screen">
     <div class="screen-header">
       <button class="btn-back" onclick="App.showScreen('home')">← Back</button>
@@ -207,19 +213,20 @@
   <!-- Hidden admin gear -->
 <div id="admin-gear" onclick="App.adminTap()" title="⚙️">⚙️</div>
 
-<script src="js/storage.js?v=14"></script>
-<script src="js/audio.js?v=14"></script>
-<script src="js/tiles.js?v=14"></script>
-<script src="js/board.js?v=14"></script>
-<script src="js/input.js?v=14"></script>
-<script src="js/matching.js?v=14"></script>
-<script src="js/boosters.js?v=14"></script>
-<script src="js/shop.js?v=14"></script>
-<script src="js/collections.js?v=14"></script>
-<script src="js/leaderboard.js?v=14"></script>
-<script src="js/solver.js?v=14"></script>
-<script src="js/generator.js?v=14"></script>
-<script src="js/ui.js?v=14"></script>
-<script src="js/main.js?v=14"></script>
+<script src="js/storage.js?v=15"></script>
+<script src="js/audio.js?v=15"></script>
+<script src="js/tiles.js?v=15"></script>
+<script src="js/board.js?v=15"></script>
+<script src="js/input.js?v=15"></script>
+<script src="js/matching.js?v=15"></script>
+<script src="js/boosters.js?v=15"></script>
+<script src="js/shop.js?v=15"></script>
+<script src="js/collections.js?v=15"></script>
+<script src="js/leaderboard.js?v=15"></script>
+<script src="js/chat.js?v=15"></script>
+<script src="js/solver.js?v=15"></script>
+<script src="js/generator.js?v=15"></script>
+<script src="js/ui.js?v=15"></script>
+<script src="js/main.js?v=15"></script>
 </body>
 </html>

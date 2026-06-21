@@ -23,6 +23,7 @@ const UI = {
 
     if (name === 'home') this.updateHome();
     if (name === 'leaderboard') this._renderLeaderboardPlaceholder();
+    if (name === 'chat') this.renderChat();
     if (name === 'shop') Shop.refresh();
     if (name === 'collections') this.renderCollections();
   },
@@ -311,6 +312,44 @@ const UI = {
       html += '</div>';
     });
     container.innerHTML = html;
+  },
+
+  renderChat() {
+    const container = document.getElementById('chat-messages');
+    if (!container) return;
+    const msgs = Chat.getMessages();
+    if (!msgs.length) {
+      container.innerHTML = '<div class="placeholder-text">No messages yet. Say hello to your alliance!</div>';
+      return;
+    }
+    const am = { fox:'🦊',owl:'🦉',deer:'🦌',bear:'🐻',wolf:'🐺',cat:'🐱',dog:'🐶',bird:'🐦',frog:'🐸',mouse:'🐭',duck:'🦆',turtle:'🐢',hamster:'🐹',koala:'🐨',otter:'🦦',badger:'🦡',raccoon:'🦝',squirrel:'🐿',hedgehog:'🦔',bat:'🦇' };
+    function ae(a) { return am[a] || '🐾'; }
+    let html = '';
+    msgs.slice(-50).forEach(msg => {
+      if (msg.sender === 'bot') {
+        html += '<div class="chat-msg chat-msg--bot"><div class="chat-msg-header"><span class="chat-msg-avatar">' + ae(msg.animal) + '</span><span class="chat-msg-name">' + msg.botName + '</span><span class="chat-msg-style">' + (msg.style || '') + '</span></div><div class="chat-msg-text">' + msg.text + '</div></div>';
+      } else {
+        html += '<div class="chat-msg chat-msg--player"><div class="chat-msg-text">' + msg.text + '</div></div>';
+      }
+    });
+    container.innerHTML = html;
+    container.scrollTop = container.scrollHeight;
+  },
+
+  sendChat() {
+    const input = document.getElementById('chat-input');
+    const text = input.value.trim();
+    if (!text) return;
+    Chat.sendMessage(text, 'player');
+    input.value = '';
+    this.renderChat();
+    const shouldReply = Math.random() < 0.3;
+    if (shouldReply) {
+      setTimeout(() => {
+        Chat.botMessage('bot_chatter');
+        this.renderChat();
+      }, 1000 + Math.random() * 2000);
+    }
   },
 
 };

@@ -17,6 +17,7 @@ const App = {
     Shop.init();
     Collections.init();
     Leaderboard.init();
+    Chat.init();
     this._setupAdminGear();
     console.log('🦊 TripleTails v1.0 initialized');
     console.log(`   Day ${this._gameDay()}, Seed: ${Generator._seed}`);

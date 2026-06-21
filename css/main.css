@@ -883,3 +883,89 @@ body {
 .lb-player-stub .lb-time {
   color: var(--clr-fg-mid);
 }
+
+/* ── Alliance Chat (Phase 8) ── */
+.chat-bot-count {
+  font-size: 12px;
+  color: var(--clr-fg-mid);
+  margin-left: auto;
+}
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: var(--clr-bg-dark);
+}
+.chat-msg {
+  max-width: 88%;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  line-height: 1.4;
+  animation: chatSlide 0.25s ease-out;
+}
+@keyframes chatSlide {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.chat-msg--bot {
+  align-self: flex-start;
+  background: var(--clr-surface);
+  border-bottom-left-radius: 2px;
+}
+.chat-msg--player {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #2d5a2d, #1e3e1e);
+  border-bottom-right-radius: 2px;
+}
+.chat-msg-header {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 3px;
+}
+.chat-msg-avatar { font-size: 14px; }
+.chat-msg-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--clr-accent);
+}
+.chat-msg-style {
+  font-size: 9px;
+  color: var(--clr-fg-mid);
+  font-style: italic;
+}
+.chat-msg-text {
+  color: var(--clr-fg);
+}
+.chat-input-area {
+  display: flex;
+  gap: 6px;
+  padding: 8px 10px;
+  background: var(--clr-bg-mid);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  flex-shrink: 0;
+}
+.chat-input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: var(--clr-bg-dark);
+  color: var(--clr-fg);
+  font-family: var(--font-body);
+  font-size: 13px;
+  outline: none;
+}
+.chat-input:focus {
+  border-color: var(--clr-accent);
+}
+.chat-send {
+  padding: 8px 16px !important;
+  font-size: 13px !important;
+  min-width: auto !important;
+}
