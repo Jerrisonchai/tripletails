@@ -8,7 +8,7 @@ const App = {
   matchCount: 0,
   comboCount: 0,
 
-  init() {
+  async init() {
     Audio.init();
     Storage.getProgress(); // Ensure defaults exist
     this._setupDailyReset();
@@ -17,8 +17,8 @@ const App = {
     Boosters.init();
     Shop.init();
     Collections.init();
-    Leaderboard.init();
-    Chat.init();
+    await Leaderboard.init();
+    await Chat.init();
     Celebrate.init();
     this._setupAdminGear();
     console.log('🦊 TripleTails v1.0 initialized');

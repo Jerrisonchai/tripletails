@@ -107,19 +107,21 @@ const Chat = {
       this._msgId = Math.max(...this._messages.map(m => m._id || 0)) + 1;
     }
 
-    // Check for morning greeting (8am-10am, once per day)
+    // Greet once per day (any time)
     this._checkDailyGreeting();
 
-    // Seed chat with welcome messages if empty
+    // Seed chat synchronously so messages exist immediately
     if (this._messages.length === 0) {
       this.botMessage('morning');
-      setTimeout(() => this.botMessage('bot_chatter'), 2000);
-      setTimeout(() => this.botMessage('bot_chatter'), 5000);
+      this.botMessage('bot_chatter');
+      this.botMessage('bot_chatter');
+    } else if (this._messages.length < 3) {
+      this.botMessage('bot_chatter');
     }
 
     this._ready = true;
 
-    // Start idle bot chatter loop
+    // Start idle bot chatter loop (fires during active gameplay)
     this.scheduleIdleChatter();
   },
 
