@@ -1,0 +1,8927 @@
+{
+  "2026-06-21": {
+    "easy": [
+      {
+        "id": "t0",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -3,
+        "y": -8,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t1",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 45,
+        "y": -8,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t2",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 93,
+        "y": -8,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t3",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 141,
+        "y": -8,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t4",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 189,
+        "y": -8,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t5",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -3,
+        "y": 40,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t6",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 45,
+        "y": 40,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t7",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 93,
+        "y": 40,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t8",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 141,
+        "y": 40,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t9",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 189,
+        "y": 40,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t10",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": -3,
+        "y": 88,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t11",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 45,
+        "y": 88,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t12",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 93,
+        "y": 88,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t13",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 141,
+        "y": 88,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t14",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 189,
+        "y": 88,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t15",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": -3,
+        "y": 136,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t16",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 45,
+        "y": 136,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t17",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 93,
+        "y": 136,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t18",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 141,
+        "y": 136,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t19",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 189,
+        "y": 136,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t20",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": -3,
+        "y": 184,
+        "row": 4,
+        "col": 0
+      }
+    ],
+    "hard": [
+      {
+        "id": "t0",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 8,
+        "y": 43,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t1",
+        "critterType": "panda",
+        "layer": 0,
+        "x": 56,
+        "y": 43,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t2",
+        "critterType": "panda",
+        "layer": 0,
+        "x": 104,
+        "y": 43,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t3",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 152,
+        "y": 43,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t4",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 200,
+        "y": 43,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t5",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 248,
+        "y": 43,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t6",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 296,
+        "y": 43,
+        "row": 0,
+        "col": 6
+      },
+      {
+        "id": "t7",
+        "critterType": "panda",
+        "layer": 0,
+        "x": 344,
+        "y": 43,
+        "row": 0,
+        "col": 7
+      },
+      {
+        "id": "t8",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 8,
+        "y": 91,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t9",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 56,
+        "y": 91,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t10",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 104,
+        "y": 91,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t11",
+        "critterType": "panda",
+        "layer": 0,
+        "x": 152,
+        "y": 91,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t12",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 200,
+        "y": 91,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t13",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 248,
+        "y": 91,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t14",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 296,
+        "y": 91,
+        "row": 1,
+        "col": 6
+      },
+      {
+        "id": "t15",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 344,
+        "y": 91,
+        "row": 1,
+        "col": 7
+      },
+      {
+        "id": "t16",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 8,
+        "y": 139,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t17",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 56,
+        "y": 139,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t18",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 104,
+        "y": 139,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t19",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 152,
+        "y": 139,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t20",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 200,
+        "y": 139,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t21",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 248,
+        "y": 139,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t22",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 296,
+        "y": 139,
+        "row": 2,
+        "col": 6
+      },
+      {
+        "id": "t23",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 344,
+        "y": 139,
+        "row": 2,
+        "col": 7
+      },
+      {
+        "id": "t24",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 8,
+        "y": 187,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t25",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 56,
+        "y": 187,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t26",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 104,
+        "y": 187,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t27",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 152,
+        "y": 187,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t28",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 200,
+        "y": 187,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t29",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 248,
+        "y": 187,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t30",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 296,
+        "y": 187,
+        "row": 3,
+        "col": 6
+      },
+      {
+        "id": "t31",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 344,
+        "y": 187,
+        "row": 3,
+        "col": 7
+      },
+      {
+        "id": "t32",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 8,
+        "y": 235,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t33",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 56,
+        "y": 235,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t34",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 104,
+        "y": 235,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t35",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 152,
+        "y": 235,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t36",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 200,
+        "y": 235,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t37",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 248,
+        "y": 235,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t38",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 296,
+        "y": 235,
+        "row": 4,
+        "col": 6
+      },
+      {
+        "id": "t39",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 344,
+        "y": 235,
+        "row": 4,
+        "col": 7
+      },
+      {
+        "id": "t40",
+        "critterType": "pig",
+        "layer": 1,
+        "x": 75,
+        "y": 35,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t41",
+        "critterType": "panda",
+        "layer": 1,
+        "x": 123,
+        "y": 35,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t42",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 171,
+        "y": 35,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t43",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": 219,
+        "y": 35,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t44",
+        "critterType": "panda",
+        "layer": 1,
+        "x": 267,
+        "y": 35,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t45",
+        "critterType": "panda",
+        "layer": 1,
+        "x": 75,
+        "y": 83,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t46",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 267,
+        "y": 83,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t47",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": 75,
+        "y": 131,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t48",
+        "critterType": "panda",
+        "layer": 1,
+        "x": 267,
+        "y": 131,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t49",
+        "critterType": "panda",
+        "layer": 1,
+        "x": 75,
+        "y": 179,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t50",
+        "critterType": "pig",
+        "layer": 1,
+        "x": 267,
+        "y": 179,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t51",
+        "critterType": "giraffe",
+        "layer": 1,
+        "x": 75,
+        "y": 227,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t52",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 267,
+        "y": 227,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t53",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 75,
+        "y": 275,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t54",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": 123,
+        "y": 275,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "id": "t55",
+        "critterType": "panda",
+        "layer": 1,
+        "x": 171,
+        "y": 275,
+        "row": 5,
+        "col": 2
+      },
+      {
+        "id": "t56",
+        "critterType": "panda",
+        "layer": 1,
+        "x": 219,
+        "y": 275,
+        "row": 5,
+        "col": 3
+      },
+      {
+        "id": "t57",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": 267,
+        "y": 275,
+        "row": 5,
+        "col": 4
+      },
+      {
+        "id": "t58",
+        "critterType": "giraffe",
+        "layer": 2,
+        "x": 46,
+        "y": -3,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t59",
+        "critterType": "giraffe",
+        "layer": 2,
+        "x": 94,
+        "y": -3,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t60",
+        "critterType": "hippo",
+        "layer": 2,
+        "x": 142,
+        "y": -3,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t61",
+        "critterType": "panda",
+        "layer": 2,
+        "x": 190,
+        "y": -3,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t62",
+        "critterType": "giraffe",
+        "layer": 2,
+        "x": 238,
+        "y": -3,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t63",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 286,
+        "y": -3,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t64",
+        "critterType": "hippo",
+        "layer": 2,
+        "x": 46,
+        "y": 45,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t65",
+        "critterType": "snake",
+        "layer": 2,
+        "x": 286,
+        "y": 45,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t66",
+        "critterType": "penguin",
+        "layer": 2,
+        "x": 46,
+        "y": 93,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t67",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 286,
+        "y": 93,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t68",
+        "critterType": "panda",
+        "layer": 2,
+        "x": 46,
+        "y": 141,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t69",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 286,
+        "y": 141,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t70",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 46,
+        "y": 189,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t71",
+        "critterType": "hippo",
+        "layer": 2,
+        "x": 286,
+        "y": 189,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t72",
+        "critterType": "giraffe",
+        "layer": 2,
+        "x": 46,
+        "y": 237,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t73",
+        "critterType": "hippo",
+        "layer": 2,
+        "x": 286,
+        "y": 237,
+        "row": 5,
+        "col": 5
+      },
+      {
+        "id": "t74",
+        "critterType": "snake",
+        "layer": 2,
+        "x": 46,
+        "y": 285,
+        "row": 6,
+        "col": 0
+      },
+      {
+        "id": "t75",
+        "critterType": "hippo",
+        "layer": 2,
+        "x": 94,
+        "y": 285,
+        "row": 6,
+        "col": 1
+      },
+      {
+        "id": "t76",
+        "critterType": "pig",
+        "layer": 2,
+        "x": 142,
+        "y": 285,
+        "row": 6,
+        "col": 2
+      },
+      {
+        "id": "t77",
+        "critterType": "panda",
+        "layer": 2,
+        "x": 190,
+        "y": 285,
+        "row": 6,
+        "col": 3
+      },
+      {
+        "id": "t78",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 238,
+        "y": 285,
+        "row": 6,
+        "col": 4
+      },
+      {
+        "id": "t79",
+        "critterType": "giraffe",
+        "layer": 2,
+        "x": 286,
+        "y": 285,
+        "row": 6,
+        "col": 5
+      },
+      {
+        "id": "t80",
+        "critterType": "giraffe",
+        "layer": 3,
+        "x": 56,
+        "y": 30,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t81",
+        "critterType": "elephant",
+        "layer": 3,
+        "x": 104,
+        "y": 30,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t82",
+        "critterType": "panda",
+        "layer": 3,
+        "x": 152,
+        "y": 30,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t83",
+        "critterType": "elephant",
+        "layer": 3,
+        "x": 200,
+        "y": 30,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t84",
+        "critterType": "panda",
+        "layer": 3,
+        "x": 248,
+        "y": 30,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t85",
+        "critterType": "panda",
+        "layer": 3,
+        "x": 296,
+        "y": 30,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t86",
+        "critterType": "panda",
+        "layer": 3,
+        "x": 56,
+        "y": 78,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t87",
+        "critterType": "giraffe",
+        "layer": 3,
+        "x": 296,
+        "y": 78,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t88",
+        "critterType": "giraffe",
+        "layer": 3,
+        "x": 56,
+        "y": 126,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t89",
+        "critterType": "giraffe",
+        "layer": 3,
+        "x": 296,
+        "y": 126,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t90",
+        "critterType": "hippo",
+        "layer": 3,
+        "x": 56,
+        "y": 174,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t91",
+        "critterType": "hippo",
+        "layer": 3,
+        "x": 296,
+        "y": 174,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t92",
+        "critterType": "giraffe",
+        "layer": 3,
+        "x": 56,
+        "y": 222,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t93",
+        "critterType": "monkey",
+        "layer": 3,
+        "x": 296,
+        "y": 222,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t94",
+        "critterType": "monkey",
+        "layer": 3,
+        "x": 56,
+        "y": 270,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t95",
+        "critterType": "rabbit",
+        "layer": 3,
+        "x": 104,
+        "y": 270,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "id": "t96",
+        "critterType": "snake",
+        "layer": 3,
+        "x": 152,
+        "y": 270,
+        "row": 5,
+        "col": 2
+      },
+      {
+        "id": "t97",
+        "critterType": "elephant",
+        "layer": 3,
+        "x": 200,
+        "y": 270,
+        "row": 5,
+        "col": 3
+      },
+      {
+        "id": "t98",
+        "critterType": "panda",
+        "layer": 3,
+        "x": 248,
+        "y": 270,
+        "row": 5,
+        "col": 4
+      },
+      {
+        "id": "t99",
+        "critterType": "giraffe",
+        "layer": 3,
+        "x": 296,
+        "y": 270,
+        "row": 5,
+        "col": 5
+      },
+      {
+        "id": "t100",
+        "critterType": "elephant",
+        "layer": 4,
+        "x": 10,
+        "y": 26,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t101",
+        "critterType": "pig",
+        "layer": 4,
+        "x": 58,
+        "y": 26,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t102",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 106,
+        "y": 26,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t103",
+        "critterType": "rabbit",
+        "layer": 4,
+        "x": 154,
+        "y": 26,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t104",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 202,
+        "y": 26,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t105",
+        "critterType": "panda",
+        "layer": 4,
+        "x": 250,
+        "y": 26,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t106",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 298,
+        "y": 26,
+        "row": 0,
+        "col": 6
+      },
+      {
+        "id": "t107",
+        "critterType": "rabbit",
+        "layer": 4,
+        "x": 10,
+        "y": 74,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t108",
+        "critterType": "hippo",
+        "layer": 4,
+        "x": 298,
+        "y": 74,
+        "row": 1,
+        "col": 6
+      },
+      {
+        "id": "t109",
+        "critterType": "hippo",
+        "layer": 4,
+        "x": 10,
+        "y": 122,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t110",
+        "critterType": "rabbit",
+        "layer": 4,
+        "x": 298,
+        "y": 122,
+        "row": 2,
+        "col": 6
+      },
+      {
+        "id": "t111",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": 10,
+        "y": 170,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t112",
+        "critterType": "monkey",
+        "layer": 4,
+        "x": 298,
+        "y": 170,
+        "row": 3,
+        "col": 6
+      },
+      {
+        "id": "t113",
+        "critterType": "hippo",
+        "layer": 4,
+        "x": 10,
+        "y": 218,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t114",
+        "critterType": "panda",
+        "layer": 4,
+        "x": 298,
+        "y": 218,
+        "row": 4,
+        "col": 6
+      },
+      {
+        "id": "t115",
+        "critterType": "monkey",
+        "layer": 4,
+        "x": 10,
+        "y": 266,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t116",
+        "critterType": "panda",
+        "layer": 4,
+        "x": 58,
+        "y": 266,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "id": "t117",
+        "critterType": "panda",
+        "layer": 4,
+        "x": 106,
+        "y": 266,
+        "row": 5,
+        "col": 2
+      },
+      {
+        "id": "t118",
+        "critterType": "elephant",
+        "layer": 4,
+        "x": 154,
+        "y": 266,
+        "row": 5,
+        "col": 3
+      },
+      {
+        "id": "t119",
+        "critterType": "panda",
+        "layer": 4,
+        "x": 202,
+        "y": 266,
+        "row": 5,
+        "col": 4
+      }
+    ]
+  },
+  "2026-06-22": {
+    "easy": [
+      {
+        "id": "t0",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": -4,
+        "y": 5,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t1",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 44,
+        "y": 5,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t2",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 92,
+        "y": 5,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t3",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 140,
+        "y": 5,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t4",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 188,
+        "y": 5,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t5",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -4,
+        "y": 53,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t6",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 44,
+        "y": 53,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t7",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 92,
+        "y": 53,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t8",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 140,
+        "y": 53,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t9",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 188,
+        "y": 53,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t10",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -4,
+        "y": 101,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t11",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 44,
+        "y": 101,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t12",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 92,
+        "y": 101,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t13",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 140,
+        "y": 101,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t14",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 188,
+        "y": 101,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t15",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -4,
+        "y": 149,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t16",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 44,
+        "y": 149,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t17",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 92,
+        "y": 149,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t18",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 140,
+        "y": 149,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t19",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 188,
+        "y": 149,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t20",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": -4,
+        "y": 197,
+        "row": 4,
+        "col": 0
+      }
+    ],
+    "hard": [
+      {
+        "id": "t0",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 23,
+        "y": 58,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t1",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 71,
+        "y": 58,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t2",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 119,
+        "y": 58,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t3",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 167,
+        "y": 58,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t4",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 215,
+        "y": 58,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t5",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 23,
+        "y": 106,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t6",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 71,
+        "y": 106,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t7",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 119,
+        "y": 106,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t8",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 167,
+        "y": 106,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t9",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 215,
+        "y": 106,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t10",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 23,
+        "y": 154,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t11",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 71,
+        "y": 154,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t12",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 119,
+        "y": 154,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t13",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 167,
+        "y": 154,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t14",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 215,
+        "y": 154,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t15",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 23,
+        "y": 202,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t16",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 71,
+        "y": 202,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t17",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 119,
+        "y": 202,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t18",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 167,
+        "y": 202,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t19",
+        "critterType": "panda",
+        "layer": 0,
+        "x": 215,
+        "y": 202,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t20",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 23,
+        "y": 250,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t21",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 71,
+        "y": 250,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t22",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 119,
+        "y": 250,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t23",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 167,
+        "y": 250,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t24",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 215,
+        "y": 250,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t25",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": -5,
+        "y": 7,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t26",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 43,
+        "y": 7,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t27",
+        "critterType": "panda",
+        "layer": 1,
+        "x": 91,
+        "y": 7,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t28",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": 139,
+        "y": 7,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t29",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 187,
+        "y": 7,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t30",
+        "critterType": "panda",
+        "layer": 1,
+        "x": 235,
+        "y": 7,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t31",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": -5,
+        "y": 55,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t32",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 235,
+        "y": 55,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t33",
+        "critterType": "pig",
+        "layer": 1,
+        "x": -5,
+        "y": 103,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t34",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 235,
+        "y": 103,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t35",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": -5,
+        "y": 151,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t36",
+        "critterType": "giraffe",
+        "layer": 1,
+        "x": 235,
+        "y": 151,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t37",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": -5,
+        "y": 199,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t38",
+        "critterType": "panda",
+        "layer": 1,
+        "x": 235,
+        "y": 199,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t39",
+        "critterType": "giraffe",
+        "layer": 1,
+        "x": -5,
+        "y": 247,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t40",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 235,
+        "y": 247,
+        "row": 5,
+        "col": 5
+      },
+      {
+        "id": "t41",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": -5,
+        "y": 295,
+        "row": 6,
+        "col": 0
+      },
+      {
+        "id": "t42",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 43,
+        "y": 295,
+        "row": 6,
+        "col": 1
+      },
+      {
+        "id": "t43",
+        "critterType": "elephant",
+        "layer": 1,
+        "x": 91,
+        "y": 295,
+        "row": 6,
+        "col": 2
+      },
+      {
+        "id": "t44",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 139,
+        "y": 295,
+        "row": 6,
+        "col": 3
+      },
+      {
+        "id": "t45",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 187,
+        "y": 295,
+        "row": 6,
+        "col": 4
+      },
+      {
+        "id": "t46",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 235,
+        "y": 295,
+        "row": 6,
+        "col": 5
+      },
+      {
+        "id": "t47",
+        "critterType": "hippo",
+        "layer": 2,
+        "x": 14,
+        "y": 50,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t48",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 62,
+        "y": 50,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t49",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 110,
+        "y": 50,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t50",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 158,
+        "y": 50,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t51",
+        "critterType": "penguin",
+        "layer": 2,
+        "x": 206,
+        "y": 50,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t52",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 254,
+        "y": 50,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t53",
+        "critterType": "penguin",
+        "layer": 2,
+        "x": 14,
+        "y": 98,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t54",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 62,
+        "y": 98,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t55",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 110,
+        "y": 98,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t56",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 158,
+        "y": 98,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t57",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 206,
+        "y": 98,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t58",
+        "critterType": "pig",
+        "layer": 2,
+        "x": 254,
+        "y": 98,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t59",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 14,
+        "y": 146,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t60",
+        "critterType": "giraffe",
+        "layer": 2,
+        "x": 62,
+        "y": 146,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t61",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 110,
+        "y": 146,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t62",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 158,
+        "y": 146,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t63",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 206,
+        "y": 146,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t64",
+        "critterType": "panda",
+        "layer": 2,
+        "x": 254,
+        "y": 146,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t65",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 14,
+        "y": 194,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t66",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 62,
+        "y": 194,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t67",
+        "critterType": "hippo",
+        "layer": 2,
+        "x": 110,
+        "y": 194,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t68",
+        "critterType": "giraffe",
+        "layer": 2,
+        "x": 158,
+        "y": 194,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t69",
+        "critterType": "pig",
+        "layer": 2,
+        "x": 206,
+        "y": 194,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t70",
+        "critterType": "giraffe",
+        "layer": 2,
+        "x": 254,
+        "y": 194,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t71",
+        "critterType": "pig",
+        "layer": 2,
+        "x": 14,
+        "y": 242,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t72",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 62,
+        "y": 242,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t73",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 110,
+        "y": 242,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t74",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 158,
+        "y": 242,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t75",
+        "critterType": "pig",
+        "layer": 2,
+        "x": 206,
+        "y": 242,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t76",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 254,
+        "y": 242,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t77",
+        "critterType": "giraffe",
+        "layer": 3,
+        "x": 0,
+        "y": -14,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t78",
+        "critterType": "parrot",
+        "layer": 3,
+        "x": 48,
+        "y": -14,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t79",
+        "critterType": "penguin",
+        "layer": 3,
+        "x": 96,
+        "y": -14,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t80",
+        "critterType": "monkey",
+        "layer": 3,
+        "x": 144,
+        "y": -14,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t81",
+        "critterType": "rabbit",
+        "layer": 3,
+        "x": 192,
+        "y": -14,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t82",
+        "critterType": "hippo",
+        "layer": 3,
+        "x": 240,
+        "y": -14,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t83",
+        "critterType": "elephant",
+        "layer": 3,
+        "x": 0,
+        "y": 34,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t84",
+        "critterType": "pig",
+        "layer": 3,
+        "x": 240,
+        "y": 34,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t85",
+        "critterType": "rabbit",
+        "layer": 3,
+        "x": 0,
+        "y": 82,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t86",
+        "critterType": "giraffe",
+        "layer": 3,
+        "x": 240,
+        "y": 82,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t87",
+        "critterType": "snake",
+        "layer": 3,
+        "x": 0,
+        "y": 130,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t88",
+        "critterType": "pig",
+        "layer": 3,
+        "x": 240,
+        "y": 130,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t89",
+        "critterType": "snake",
+        "layer": 3,
+        "x": 0,
+        "y": 178,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t90",
+        "critterType": "rabbit",
+        "layer": 3,
+        "x": 240,
+        "y": 178,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t91",
+        "critterType": "penguin",
+        "layer": 3,
+        "x": 0,
+        "y": 226,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t92",
+        "critterType": "elephant",
+        "layer": 3,
+        "x": 240,
+        "y": 226,
+        "row": 5,
+        "col": 5
+      },
+      {
+        "id": "t93",
+        "critterType": "parrot",
+        "layer": 3,
+        "x": 0,
+        "y": 274,
+        "row": 6,
+        "col": 0
+      },
+      {
+        "id": "t94",
+        "critterType": "pig",
+        "layer": 3,
+        "x": 48,
+        "y": 274,
+        "row": 6,
+        "col": 1
+      },
+      {
+        "id": "t95",
+        "critterType": "penguin",
+        "layer": 3,
+        "x": 96,
+        "y": 274,
+        "row": 6,
+        "col": 2
+      },
+      {
+        "id": "t96",
+        "critterType": "pig",
+        "layer": 3,
+        "x": 144,
+        "y": 274,
+        "row": 6,
+        "col": 3
+      },
+      {
+        "id": "t97",
+        "critterType": "pig",
+        "layer": 3,
+        "x": 192,
+        "y": 274,
+        "row": 6,
+        "col": 4
+      },
+      {
+        "id": "t98",
+        "critterType": "monkey",
+        "layer": 3,
+        "x": 240,
+        "y": 274,
+        "row": 6,
+        "col": 5
+      },
+      {
+        "id": "t99",
+        "critterType": "snake",
+        "layer": 4,
+        "x": -1,
+        "y": 44,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t100",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 47,
+        "y": 44,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t101",
+        "critterType": "monkey",
+        "layer": 4,
+        "x": 95,
+        "y": 44,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t102",
+        "critterType": "monkey",
+        "layer": 4,
+        "x": 143,
+        "y": 44,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t103",
+        "critterType": "panda",
+        "layer": 4,
+        "x": 191,
+        "y": 44,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t104",
+        "critterType": "penguin",
+        "layer": 4,
+        "x": 239,
+        "y": 44,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t105",
+        "critterType": "monkey",
+        "layer": 4,
+        "x": -1,
+        "y": 92,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t106",
+        "critterType": "parrot",
+        "layer": 4,
+        "x": 239,
+        "y": 92,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t107",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": -1,
+        "y": 140,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t108",
+        "critterType": "elephant",
+        "layer": 4,
+        "x": 239,
+        "y": 140,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t109",
+        "critterType": "penguin",
+        "layer": 4,
+        "x": -1,
+        "y": 188,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t110",
+        "critterType": "pig",
+        "layer": 4,
+        "x": 239,
+        "y": 188,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t111",
+        "critterType": "parrot",
+        "layer": 4,
+        "x": -1,
+        "y": 236,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t112",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 47,
+        "y": 236,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t113",
+        "critterType": "monkey",
+        "layer": 4,
+        "x": 95,
+        "y": 236,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t114",
+        "critterType": "monkey",
+        "layer": 4,
+        "x": 143,
+        "y": 236,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t115",
+        "critterType": "penguin",
+        "layer": 4,
+        "x": 191,
+        "y": 236,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t116",
+        "critterType": "rabbit",
+        "layer": 4,
+        "x": 239,
+        "y": 236,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t117",
+        "critterType": "parrot",
+        "layer": 5,
+        "x": 62,
+        "y": 66,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t118",
+        "critterType": "parrot",
+        "layer": 5,
+        "x": 110,
+        "y": 66,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t119",
+        "critterType": "elephant",
+        "layer": 5,
+        "x": 158,
+        "y": 66,
+        "row": 0,
+        "col": 2
+      }
+    ]
+  },
+  "2026-06-23": {
+    "easy": [
+      {
+        "id": "t0",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": -5,
+        "y": -10,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t1",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 43,
+        "y": -10,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t2",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 91,
+        "y": -10,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t3",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 139,
+        "y": -10,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t4",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 187,
+        "y": -10,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t5",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -5,
+        "y": 38,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t6",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 43,
+        "y": 38,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t7",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 91,
+        "y": 38,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t8",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 139,
+        "y": 38,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t9",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 187,
+        "y": 38,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t10",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -5,
+        "y": 86,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t11",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 43,
+        "y": 86,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t12",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 91,
+        "y": 86,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t13",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 139,
+        "y": 86,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t14",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 187,
+        "y": 86,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t15",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": -5,
+        "y": 134,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t16",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 43,
+        "y": 134,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t17",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 91,
+        "y": 134,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t18",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 139,
+        "y": 134,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t19",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 187,
+        "y": 134,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t20",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": -5,
+        "y": 182,
+        "row": 4,
+        "col": 0
+      }
+    ],
+    "hard": [
+      {
+        "id": "t0",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 15,
+        "y": 20,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t1",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 63,
+        "y": 20,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t2",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 111,
+        "y": 20,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t3",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 159,
+        "y": 20,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t4",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 207,
+        "y": 20,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t5",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 255,
+        "y": 20,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t6",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 15,
+        "y": 68,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t7",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 63,
+        "y": 68,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t8",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 111,
+        "y": 68,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t9",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 159,
+        "y": 68,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t10",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 207,
+        "y": 68,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t11",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 255,
+        "y": 68,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t12",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 15,
+        "y": 116,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t13",
+        "critterType": "panda",
+        "layer": 0,
+        "x": 63,
+        "y": 116,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t14",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 111,
+        "y": 116,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t15",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 159,
+        "y": 116,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t16",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 207,
+        "y": 116,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t17",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 255,
+        "y": 116,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t18",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 15,
+        "y": 164,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t19",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 63,
+        "y": 164,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t20",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 111,
+        "y": 164,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t21",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 159,
+        "y": 164,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t22",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 207,
+        "y": 164,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t23",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 255,
+        "y": 164,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t24",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 15,
+        "y": 212,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t25",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 63,
+        "y": 212,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t26",
+        "critterType": "panda",
+        "layer": 0,
+        "x": 111,
+        "y": 212,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t27",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 159,
+        "y": 212,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t28",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 207,
+        "y": 212,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t29",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 255,
+        "y": 212,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t30",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 10,
+        "y": 4,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t31",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 58,
+        "y": 4,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t32",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 106,
+        "y": 4,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t33",
+        "critterType": "panda",
+        "layer": 1,
+        "x": 154,
+        "y": 4,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t34",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 202,
+        "y": 4,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t35",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 250,
+        "y": 4,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t36",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 10,
+        "y": 52,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t37",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 250,
+        "y": 52,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t38",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 10,
+        "y": 100,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t39",
+        "critterType": "elephant",
+        "layer": 1,
+        "x": 250,
+        "y": 100,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t40",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 10,
+        "y": 148,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t41",
+        "critterType": "panda",
+        "layer": 1,
+        "x": 250,
+        "y": 148,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t42",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 10,
+        "y": 196,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t43",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 250,
+        "y": 196,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t44",
+        "critterType": "elephant",
+        "layer": 1,
+        "x": 10,
+        "y": 244,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t45",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 58,
+        "y": 244,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "id": "t46",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": 106,
+        "y": 244,
+        "row": 5,
+        "col": 2
+      },
+      {
+        "id": "t47",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 154,
+        "y": 244,
+        "row": 5,
+        "col": 3
+      },
+      {
+        "id": "t48",
+        "critterType": "giraffe",
+        "layer": 1,
+        "x": 202,
+        "y": 244,
+        "row": 5,
+        "col": 4
+      },
+      {
+        "id": "t49",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 250,
+        "y": 244,
+        "row": 5,
+        "col": 5
+      },
+      {
+        "id": "t50",
+        "critterType": "giraffe",
+        "layer": 2,
+        "x": 50,
+        "y": 30,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t51",
+        "critterType": "panda",
+        "layer": 2,
+        "x": 98,
+        "y": 30,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t52",
+        "critterType": "pig",
+        "layer": 2,
+        "x": 146,
+        "y": 30,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t53",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 194,
+        "y": 30,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t54",
+        "critterType": "penguin",
+        "layer": 2,
+        "x": 242,
+        "y": 30,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t55",
+        "critterType": "penguin",
+        "layer": 2,
+        "x": 50,
+        "y": 78,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t56",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 242,
+        "y": 78,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t57",
+        "critterType": "penguin",
+        "layer": 2,
+        "x": 50,
+        "y": 126,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t58",
+        "critterType": "penguin",
+        "layer": 2,
+        "x": 242,
+        "y": 126,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t59",
+        "critterType": "snake",
+        "layer": 2,
+        "x": 50,
+        "y": 174,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t60",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 242,
+        "y": 174,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t61",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 50,
+        "y": 222,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t62",
+        "critterType": "penguin",
+        "layer": 2,
+        "x": 98,
+        "y": 222,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t63",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 146,
+        "y": 222,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t64",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 194,
+        "y": 222,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t65",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 242,
+        "y": 222,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t66",
+        "critterType": "giraffe",
+        "layer": 3,
+        "x": 136,
+        "y": -6,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t67",
+        "critterType": "pig",
+        "layer": 3,
+        "x": 136,
+        "y": 42,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t68",
+        "critterType": "parrot",
+        "layer": 3,
+        "x": 136,
+        "y": 90,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t69",
+        "critterType": "monkey",
+        "layer": 3,
+        "x": 136,
+        "y": 138,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t70",
+        "critterType": "parrot",
+        "layer": 3,
+        "x": 136,
+        "y": 186,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t71",
+        "critterType": "hippo",
+        "layer": 3,
+        "x": 136,
+        "y": 234,
+        "row": 5,
+        "col": 3
+      },
+      {
+        "id": "t72",
+        "critterType": "parrot",
+        "layer": 3,
+        "x": -8,
+        "y": 138,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t73",
+        "critterType": "monkey",
+        "layer": 3,
+        "x": 40,
+        "y": 138,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t74",
+        "critterType": "elephant",
+        "layer": 3,
+        "x": 88,
+        "y": 138,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t75",
+        "critterType": "panda",
+        "layer": 3,
+        "x": 184,
+        "y": 138,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t76",
+        "critterType": "pig",
+        "layer": 3,
+        "x": 232,
+        "y": 138,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t77",
+        "critterType": "rabbit",
+        "layer": 3,
+        "x": 280,
+        "y": 138,
+        "row": 3,
+        "col": 6
+      },
+      {
+        "id": "t78",
+        "critterType": "elephant",
+        "layer": 4,
+        "x": 60,
+        "y": -9,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t79",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 108,
+        "y": -9,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t80",
+        "critterType": "parrot",
+        "layer": 4,
+        "x": 156,
+        "y": -9,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t81",
+        "critterType": "rabbit",
+        "layer": 4,
+        "x": 204,
+        "y": -9,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t82",
+        "critterType": "pig",
+        "layer": 4,
+        "x": 252,
+        "y": -9,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t83",
+        "critterType": "rabbit",
+        "layer": 4,
+        "x": 60,
+        "y": 39,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t84",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 252,
+        "y": 39,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t85",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": 60,
+        "y": 87,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t86",
+        "critterType": "hippo",
+        "layer": 4,
+        "x": 252,
+        "y": 87,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t87",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": 60,
+        "y": 135,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t88",
+        "critterType": "parrot",
+        "layer": 4,
+        "x": 252,
+        "y": 135,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t89",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 60,
+        "y": 183,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t90",
+        "critterType": "elephant",
+        "layer": 4,
+        "x": 252,
+        "y": 183,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t91",
+        "critterType": "penguin",
+        "layer": 4,
+        "x": 60,
+        "y": 231,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t92",
+        "critterType": "panda",
+        "layer": 4,
+        "x": 108,
+        "y": 231,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "id": "t93",
+        "critterType": "pig",
+        "layer": 4,
+        "x": 156,
+        "y": 231,
+        "row": 5,
+        "col": 2
+      },
+      {
+        "id": "t94",
+        "critterType": "hippo",
+        "layer": 4,
+        "x": 204,
+        "y": 231,
+        "row": 5,
+        "col": 3
+      },
+      {
+        "id": "t95",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": 252,
+        "y": 231,
+        "row": 5,
+        "col": 4
+      },
+      {
+        "id": "t96",
+        "critterType": "rabbit",
+        "layer": 5,
+        "x": 21,
+        "y": 18,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t97",
+        "critterType": "snake",
+        "layer": 5,
+        "x": 69,
+        "y": 18,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t98",
+        "critterType": "rabbit",
+        "layer": 5,
+        "x": 117,
+        "y": 18,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t99",
+        "critterType": "penguin",
+        "layer": 5,
+        "x": 165,
+        "y": 18,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t100",
+        "critterType": "monkey",
+        "layer": 5,
+        "x": 213,
+        "y": 18,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t101",
+        "critterType": "monkey",
+        "layer": 5,
+        "x": 261,
+        "y": 18,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t102",
+        "critterType": "rabbit",
+        "layer": 5,
+        "x": 21,
+        "y": 66,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t103",
+        "critterType": "pig",
+        "layer": 5,
+        "x": 261,
+        "y": 66,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t104",
+        "critterType": "rabbit",
+        "layer": 5,
+        "x": 21,
+        "y": 114,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t105",
+        "critterType": "panda",
+        "layer": 5,
+        "x": 261,
+        "y": 114,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t106",
+        "critterType": "penguin",
+        "layer": 5,
+        "x": 21,
+        "y": 162,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t107",
+        "critterType": "pig",
+        "layer": 5,
+        "x": 261,
+        "y": 162,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t108",
+        "critterType": "panda",
+        "layer": 5,
+        "x": 21,
+        "y": 210,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t109",
+        "critterType": "giraffe",
+        "layer": 5,
+        "x": 69,
+        "y": 210,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t110",
+        "critterType": "elephant",
+        "layer": 5,
+        "x": 117,
+        "y": 210,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t111",
+        "critterType": "elephant",
+        "layer": 5,
+        "x": 165,
+        "y": 210,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t112",
+        "critterType": "rabbit",
+        "layer": 5,
+        "x": 213,
+        "y": 210,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t113",
+        "critterType": "snake",
+        "layer": 5,
+        "x": 261,
+        "y": 210,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t114",
+        "critterType": "parrot",
+        "layer": 6,
+        "x": 103,
+        "y": 88,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t115",
+        "critterType": "snake",
+        "layer": 6,
+        "x": 151,
+        "y": 88,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t116",
+        "critterType": "pig",
+        "layer": 6,
+        "x": 199,
+        "y": 88,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t117",
+        "critterType": "penguin",
+        "layer": 6,
+        "x": 103,
+        "y": 136,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t118",
+        "critterType": "penguin",
+        "layer": 6,
+        "x": 151,
+        "y": 136,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t119",
+        "critterType": "hippo",
+        "layer": 6,
+        "x": 199,
+        "y": 136,
+        "row": 1,
+        "col": 2
+      }
+    ]
+  },
+  "2026-06-24": {
+    "easy": [
+      {
+        "id": "t0",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -6,
+        "y": 3,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t1",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 42,
+        "y": 3,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t2",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 90,
+        "y": 3,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t3",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 138,
+        "y": 3,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t4",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 186,
+        "y": 3,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t5",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": -6,
+        "y": 51,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t6",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 42,
+        "y": 51,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t7",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 90,
+        "y": 51,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t8",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 138,
+        "y": 51,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t9",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 186,
+        "y": 51,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t10",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": -6,
+        "y": 99,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t11",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 42,
+        "y": 99,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t12",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 90,
+        "y": 99,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t13",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 138,
+        "y": 99,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t14",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 186,
+        "y": 99,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t15",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": -6,
+        "y": 147,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t16",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 42,
+        "y": 147,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t17",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 90,
+        "y": 147,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t18",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 138,
+        "y": 147,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t19",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 186,
+        "y": 147,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t20",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": -6,
+        "y": 195,
+        "row": 4,
+        "col": 0
+      }
+    ],
+    "hard": [
+      {
+        "id": "t0",
+        "critterType": "panda",
+        "layer": 0,
+        "x": 11,
+        "y": 11,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t1",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 59,
+        "y": 11,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t2",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 107,
+        "y": 11,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t3",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 155,
+        "y": 11,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t4",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 203,
+        "y": 11,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t5",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 251,
+        "y": 11,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t6",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 299,
+        "y": 11,
+        "row": 0,
+        "col": 6
+      },
+      {
+        "id": "t7",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 347,
+        "y": 11,
+        "row": 0,
+        "col": 7
+      },
+      {
+        "id": "t8",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 11,
+        "y": 59,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t9",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 59,
+        "y": 59,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t10",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 107,
+        "y": 59,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t11",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 155,
+        "y": 59,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t12",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 203,
+        "y": 59,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t13",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 251,
+        "y": 59,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t14",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 299,
+        "y": 59,
+        "row": 1,
+        "col": 6
+      },
+      {
+        "id": "t15",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 347,
+        "y": 59,
+        "row": 1,
+        "col": 7
+      },
+      {
+        "id": "t16",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 11,
+        "y": 107,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t17",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 59,
+        "y": 107,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t18",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 107,
+        "y": 107,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t19",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 155,
+        "y": 107,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t20",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 203,
+        "y": 107,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t21",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 251,
+        "y": 107,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t22",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 299,
+        "y": 107,
+        "row": 2,
+        "col": 6
+      },
+      {
+        "id": "t23",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 347,
+        "y": 107,
+        "row": 2,
+        "col": 7
+      },
+      {
+        "id": "t24",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 11,
+        "y": 155,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t25",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 59,
+        "y": 155,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t26",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 107,
+        "y": 155,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t27",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 155,
+        "y": 155,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t28",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 203,
+        "y": 155,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t29",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 251,
+        "y": 155,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t30",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 299,
+        "y": 155,
+        "row": 3,
+        "col": 6
+      },
+      {
+        "id": "t31",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 347,
+        "y": 155,
+        "row": 3,
+        "col": 7
+      },
+      {
+        "id": "t32",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 11,
+        "y": 203,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t33",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 59,
+        "y": 203,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t34",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 107,
+        "y": 203,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t35",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 155,
+        "y": 203,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t36",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 203,
+        "y": 203,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t37",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 251,
+        "y": 203,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t38",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 299,
+        "y": 203,
+        "row": 4,
+        "col": 6
+      },
+      {
+        "id": "t39",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 347,
+        "y": 203,
+        "row": 4,
+        "col": 7
+      },
+      {
+        "id": "t40",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 11,
+        "y": 251,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t41",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 59,
+        "y": 251,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "id": "t42",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 107,
+        "y": 251,
+        "row": 5,
+        "col": 2
+      },
+      {
+        "id": "t43",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 155,
+        "y": 251,
+        "row": 5,
+        "col": 3
+      },
+      {
+        "id": "t44",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 203,
+        "y": 251,
+        "row": 5,
+        "col": 4
+      },
+      {
+        "id": "t45",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 251,
+        "y": 251,
+        "row": 5,
+        "col": 5
+      },
+      {
+        "id": "t46",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 299,
+        "y": 251,
+        "row": 5,
+        "col": 6
+      },
+      {
+        "id": "t47",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 347,
+        "y": 251,
+        "row": 5,
+        "col": 7
+      },
+      {
+        "id": "t48",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 11,
+        "y": 299,
+        "row": 6,
+        "col": 0
+      },
+      {
+        "id": "t49",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 59,
+        "y": 299,
+        "row": 6,
+        "col": 1
+      },
+      {
+        "id": "t50",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 107,
+        "y": 299,
+        "row": 6,
+        "col": 2
+      },
+      {
+        "id": "t51",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 155,
+        "y": 299,
+        "row": 6,
+        "col": 3
+      },
+      {
+        "id": "t52",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 203,
+        "y": 299,
+        "row": 6,
+        "col": 4
+      },
+      {
+        "id": "t53",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 251,
+        "y": 299,
+        "row": 6,
+        "col": 5
+      },
+      {
+        "id": "t54",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 299,
+        "y": 299,
+        "row": 6,
+        "col": 6
+      },
+      {
+        "id": "t55",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 347,
+        "y": 299,
+        "row": 6,
+        "col": 7
+      },
+      {
+        "id": "t56",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 11,
+        "y": 347,
+        "row": 7,
+        "col": 0
+      },
+      {
+        "id": "t57",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 59,
+        "y": 347,
+        "row": 7,
+        "col": 1
+      },
+      {
+        "id": "t58",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 107,
+        "y": 347,
+        "row": 7,
+        "col": 2
+      },
+      {
+        "id": "t59",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 155,
+        "y": 347,
+        "row": 7,
+        "col": 3
+      },
+      {
+        "id": "t60",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 203,
+        "y": 347,
+        "row": 7,
+        "col": 4
+      },
+      {
+        "id": "t61",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 251,
+        "y": 347,
+        "row": 7,
+        "col": 5
+      },
+      {
+        "id": "t62",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 299,
+        "y": 347,
+        "row": 7,
+        "col": 6
+      },
+      {
+        "id": "t63",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 347,
+        "y": 347,
+        "row": 7,
+        "col": 7
+      },
+      {
+        "id": "t64",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 30,
+        "y": 72,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t65",
+        "critterType": "elephant",
+        "layer": 1,
+        "x": 78,
+        "y": 72,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t66",
+        "critterType": "hippo",
+        "layer": 1,
+        "x": 126,
+        "y": 72,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t67",
+        "critterType": "hippo",
+        "layer": 1,
+        "x": 174,
+        "y": 72,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t68",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 222,
+        "y": 72,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t69",
+        "critterType": "hippo",
+        "layer": 1,
+        "x": 270,
+        "y": 72,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t70",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 318,
+        "y": 72,
+        "row": 0,
+        "col": 6
+      },
+      {
+        "id": "t71",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 30,
+        "y": 120,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t72",
+        "critterType": "elephant",
+        "layer": 1,
+        "x": 318,
+        "y": 120,
+        "row": 1,
+        "col": 6
+      },
+      {
+        "id": "t73",
+        "critterType": "giraffe",
+        "layer": 1,
+        "x": 30,
+        "y": 168,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t74",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 318,
+        "y": 168,
+        "row": 2,
+        "col": 6
+      },
+      {
+        "id": "t75",
+        "critterType": "hippo",
+        "layer": 1,
+        "x": 30,
+        "y": 216,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t76",
+        "critterType": "hippo",
+        "layer": 1,
+        "x": 318,
+        "y": 216,
+        "row": 3,
+        "col": 6
+      },
+      {
+        "id": "t77",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": 30,
+        "y": 264,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t78",
+        "critterType": "giraffe",
+        "layer": 1,
+        "x": 78,
+        "y": 264,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t79",
+        "critterType": "elephant",
+        "layer": 1,
+        "x": 126,
+        "y": 264,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t80",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 174,
+        "y": 264,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t81",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 222,
+        "y": 264,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t82",
+        "critterType": "panda",
+        "layer": 1,
+        "x": 270,
+        "y": 264,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t83",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": 318,
+        "y": 264,
+        "row": 4,
+        "col": 6
+      },
+      {
+        "id": "t84",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 62,
+        "y": 107,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t85",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 110,
+        "y": 107,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t86",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 158,
+        "y": 107,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t87",
+        "critterType": "penguin",
+        "layer": 2,
+        "x": 206,
+        "y": 107,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t88",
+        "critterType": "hippo",
+        "layer": 2,
+        "x": 254,
+        "y": 107,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t89",
+        "critterType": "pig",
+        "layer": 2,
+        "x": 62,
+        "y": 155,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t90",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 110,
+        "y": 155,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t91",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 158,
+        "y": 155,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t92",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 206,
+        "y": 155,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t93",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 254,
+        "y": 155,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t94",
+        "critterType": "penguin",
+        "layer": 2,
+        "x": 62,
+        "y": 203,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t95",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 110,
+        "y": 203,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t96",
+        "critterType": "giraffe",
+        "layer": 2,
+        "x": 158,
+        "y": 203,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t97",
+        "critterType": "hippo",
+        "layer": 2,
+        "x": 206,
+        "y": 203,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t98",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 254,
+        "y": 203,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t99",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 62,
+        "y": 251,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t100",
+        "critterType": "giraffe",
+        "layer": 2,
+        "x": 110,
+        "y": 251,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t101",
+        "critterType": "panda",
+        "layer": 2,
+        "x": 158,
+        "y": 251,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t102",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 206,
+        "y": 251,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t103",
+        "critterType": "hippo",
+        "layer": 2,
+        "x": 254,
+        "y": 251,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t104",
+        "critterType": "hippo",
+        "layer": 3,
+        "x": 133,
+        "y": 74,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t105",
+        "critterType": "monkey",
+        "layer": 3,
+        "x": 181,
+        "y": 74,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t106",
+        "critterType": "snake",
+        "layer": 3,
+        "x": 229,
+        "y": 74,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t107",
+        "critterType": "hippo",
+        "layer": 3,
+        "x": 133,
+        "y": 122,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t108",
+        "critterType": "parrot",
+        "layer": 3,
+        "x": 181,
+        "y": 122,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t109",
+        "critterType": "parrot",
+        "layer": 3,
+        "x": 229,
+        "y": 122,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t110",
+        "critterType": "rabbit",
+        "layer": 3,
+        "x": 133,
+        "y": 170,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t111",
+        "critterType": "hippo",
+        "layer": 3,
+        "x": 181,
+        "y": 170,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t112",
+        "critterType": "giraffe",
+        "layer": 3,
+        "x": 229,
+        "y": 170,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t113",
+        "critterType": "penguin",
+        "layer": 3,
+        "x": 133,
+        "y": 218,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t114",
+        "critterType": "parrot",
+        "layer": 3,
+        "x": 181,
+        "y": 218,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t115",
+        "critterType": "pig",
+        "layer": 3,
+        "x": 229,
+        "y": 218,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t116",
+        "critterType": "monkey",
+        "layer": 3,
+        "x": 133,
+        "y": 266,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t117",
+        "critterType": "hippo",
+        "layer": 3,
+        "x": 181,
+        "y": 266,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t118",
+        "critterType": "penguin",
+        "layer": 3,
+        "x": 229,
+        "y": 266,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t119",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": 164,
+        "y": 10,
+        "row": 0,
+        "col": 3
+      }
+    ]
+  },
+  "2026-06-25": {
+    "easy": [
+      {
+        "id": "t0",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": -7,
+        "y": -12,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t1",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 41,
+        "y": -12,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t2",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 89,
+        "y": -12,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t3",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 137,
+        "y": -12,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t4",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 185,
+        "y": -12,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t5",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -7,
+        "y": 36,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t6",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 41,
+        "y": 36,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t7",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 89,
+        "y": 36,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t8",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 137,
+        "y": 36,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t9",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 185,
+        "y": 36,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t10",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": -7,
+        "y": 84,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t11",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 41,
+        "y": 84,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t12",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 89,
+        "y": 84,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t13",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 137,
+        "y": 84,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t14",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 185,
+        "y": 84,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t15",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -7,
+        "y": 132,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t16",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 41,
+        "y": 132,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t17",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 89,
+        "y": 132,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t18",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 137,
+        "y": 132,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t19",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 185,
+        "y": 132,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t20",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -7,
+        "y": 180,
+        "row": 4,
+        "col": 0
+      }
+    ],
+    "hard": [
+      {
+        "id": "t0",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 3,
+        "y": 21,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t1",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 51,
+        "y": 21,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t2",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 99,
+        "y": 21,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t3",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 147,
+        "y": 21,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t4",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 195,
+        "y": 21,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t5",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 243,
+        "y": 21,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t6",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 291,
+        "y": 21,
+        "row": 0,
+        "col": 6
+      },
+      {
+        "id": "t7",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 339,
+        "y": 21,
+        "row": 0,
+        "col": 7
+      },
+      {
+        "id": "t8",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 3,
+        "y": 69,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t9",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 51,
+        "y": 69,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t10",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 99,
+        "y": 69,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t11",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 147,
+        "y": 69,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t12",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 195,
+        "y": 69,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t13",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 243,
+        "y": 69,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t14",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 291,
+        "y": 69,
+        "row": 1,
+        "col": 6
+      },
+      {
+        "id": "t15",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 339,
+        "y": 69,
+        "row": 1,
+        "col": 7
+      },
+      {
+        "id": "t16",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 3,
+        "y": 117,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t17",
+        "critterType": "panda",
+        "layer": 0,
+        "x": 51,
+        "y": 117,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t18",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 99,
+        "y": 117,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t19",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 147,
+        "y": 117,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t20",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 195,
+        "y": 117,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t21",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 243,
+        "y": 117,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t22",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 291,
+        "y": 117,
+        "row": 2,
+        "col": 6
+      },
+      {
+        "id": "t23",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 339,
+        "y": 117,
+        "row": 2,
+        "col": 7
+      },
+      {
+        "id": "t24",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 3,
+        "y": 165,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t25",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 51,
+        "y": 165,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t26",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 99,
+        "y": 165,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t27",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 147,
+        "y": 165,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t28",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 195,
+        "y": 165,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t29",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 243,
+        "y": 165,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t30",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 291,
+        "y": 165,
+        "row": 3,
+        "col": 6
+      },
+      {
+        "id": "t31",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 339,
+        "y": 165,
+        "row": 3,
+        "col": 7
+      },
+      {
+        "id": "t32",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 3,
+        "y": 213,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t33",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 51,
+        "y": 213,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t34",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 99,
+        "y": 213,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t35",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 147,
+        "y": 213,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t36",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 195,
+        "y": 213,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t37",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 243,
+        "y": 213,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t38",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 291,
+        "y": 213,
+        "row": 4,
+        "col": 6
+      },
+      {
+        "id": "t39",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 339,
+        "y": 213,
+        "row": 4,
+        "col": 7
+      },
+      {
+        "id": "t40",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 3,
+        "y": 261,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t41",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 51,
+        "y": 261,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "id": "t42",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 99,
+        "y": 261,
+        "row": 5,
+        "col": 2
+      },
+      {
+        "id": "t43",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 147,
+        "y": 261,
+        "row": 5,
+        "col": 3
+      },
+      {
+        "id": "t44",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 195,
+        "y": 261,
+        "row": 5,
+        "col": 4
+      },
+      {
+        "id": "t45",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 243,
+        "y": 261,
+        "row": 5,
+        "col": 5
+      },
+      {
+        "id": "t46",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 291,
+        "y": 261,
+        "row": 5,
+        "col": 6
+      },
+      {
+        "id": "t47",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 339,
+        "y": 261,
+        "row": 5,
+        "col": 7
+      },
+      {
+        "id": "t48",
+        "critterType": "pig",
+        "layer": 1,
+        "x": 22,
+        "y": -4,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t49",
+        "critterType": "hippo",
+        "layer": 1,
+        "x": 70,
+        "y": -4,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t50",
+        "critterType": "hippo",
+        "layer": 1,
+        "x": 118,
+        "y": -4,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t51",
+        "critterType": "pig",
+        "layer": 1,
+        "x": 166,
+        "y": -4,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t52",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": 214,
+        "y": -4,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t53",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 262,
+        "y": -4,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t54",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 310,
+        "y": -4,
+        "row": 0,
+        "col": 6
+      },
+      {
+        "id": "t55",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 22,
+        "y": 44,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t56",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 310,
+        "y": 44,
+        "row": 1,
+        "col": 6
+      },
+      {
+        "id": "t57",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 22,
+        "y": 92,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t58",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 310,
+        "y": 92,
+        "row": 2,
+        "col": 6
+      },
+      {
+        "id": "t59",
+        "critterType": "snake",
+        "layer": 1,
+        "x": 22,
+        "y": 140,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t60",
+        "critterType": "hippo",
+        "layer": 1,
+        "x": 310,
+        "y": 140,
+        "row": 3,
+        "col": 6
+      },
+      {
+        "id": "t61",
+        "critterType": "hippo",
+        "layer": 1,
+        "x": 22,
+        "y": 188,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t62",
+        "critterType": "hippo",
+        "layer": 1,
+        "x": 310,
+        "y": 188,
+        "row": 4,
+        "col": 6
+      },
+      {
+        "id": "t63",
+        "critterType": "pig",
+        "layer": 1,
+        "x": 22,
+        "y": 236,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t64",
+        "critterType": "pig",
+        "layer": 1,
+        "x": 310,
+        "y": 236,
+        "row": 5,
+        "col": 6
+      },
+      {
+        "id": "t65",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 22,
+        "y": 284,
+        "row": 6,
+        "col": 0
+      },
+      {
+        "id": "t66",
+        "critterType": "hippo",
+        "layer": 1,
+        "x": 70,
+        "y": 284,
+        "row": 6,
+        "col": 1
+      },
+      {
+        "id": "t67",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 118,
+        "y": 284,
+        "row": 6,
+        "col": 2
+      },
+      {
+        "id": "t68",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 166,
+        "y": 284,
+        "row": 6,
+        "col": 3
+      },
+      {
+        "id": "t69",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 214,
+        "y": 284,
+        "row": 6,
+        "col": 4
+      },
+      {
+        "id": "t70",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": 262,
+        "y": 284,
+        "row": 6,
+        "col": 5
+      },
+      {
+        "id": "t71",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 310,
+        "y": 284,
+        "row": 6,
+        "col": 6
+      },
+      {
+        "id": "t72",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 30,
+        "y": -13,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t73",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 78,
+        "y": -13,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t74",
+        "critterType": "snake",
+        "layer": 2,
+        "x": 126,
+        "y": -13,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t75",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 174,
+        "y": -13,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t76",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 222,
+        "y": -13,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t77",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 270,
+        "y": -13,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t78",
+        "critterType": "hippo",
+        "layer": 2,
+        "x": 318,
+        "y": -13,
+        "row": 0,
+        "col": 6
+      },
+      {
+        "id": "t79",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 30,
+        "y": 35,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t80",
+        "critterType": "hippo",
+        "layer": 2,
+        "x": 318,
+        "y": 35,
+        "row": 1,
+        "col": 6
+      },
+      {
+        "id": "t81",
+        "critterType": "snake",
+        "layer": 2,
+        "x": 30,
+        "y": 83,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t82",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 318,
+        "y": 83,
+        "row": 2,
+        "col": 6
+      },
+      {
+        "id": "t83",
+        "critterType": "giraffe",
+        "layer": 2,
+        "x": 30,
+        "y": 131,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t84",
+        "critterType": "pig",
+        "layer": 2,
+        "x": 318,
+        "y": 131,
+        "row": 3,
+        "col": 6
+      },
+      {
+        "id": "t85",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 30,
+        "y": 179,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t86",
+        "critterType": "snake",
+        "layer": 2,
+        "x": 318,
+        "y": 179,
+        "row": 4,
+        "col": 6
+      },
+      {
+        "id": "t87",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 30,
+        "y": 227,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t88",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 318,
+        "y": 227,
+        "row": 5,
+        "col": 6
+      },
+      {
+        "id": "t89",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 30,
+        "y": 275,
+        "row": 6,
+        "col": 0
+      },
+      {
+        "id": "t90",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 78,
+        "y": 275,
+        "row": 6,
+        "col": 1
+      },
+      {
+        "id": "t91",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 126,
+        "y": 275,
+        "row": 6,
+        "col": 2
+      },
+      {
+        "id": "t92",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 174,
+        "y": 275,
+        "row": 6,
+        "col": 3
+      },
+      {
+        "id": "t93",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 222,
+        "y": 275,
+        "row": 6,
+        "col": 4
+      },
+      {
+        "id": "t94",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 270,
+        "y": 275,
+        "row": 6,
+        "col": 5
+      },
+      {
+        "id": "t95",
+        "critterType": "pig",
+        "layer": 2,
+        "x": 318,
+        "y": 275,
+        "row": 6,
+        "col": 6
+      },
+      {
+        "id": "t96",
+        "critterType": "monkey",
+        "layer": 3,
+        "x": 125,
+        "y": 106,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t97",
+        "critterType": "elephant",
+        "layer": 3,
+        "x": 173,
+        "y": 106,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t98",
+        "critterType": "rabbit",
+        "layer": 3,
+        "x": 221,
+        "y": 106,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t99",
+        "critterType": "giraffe",
+        "layer": 3,
+        "x": 125,
+        "y": 154,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t100",
+        "critterType": "hippo",
+        "layer": 3,
+        "x": 173,
+        "y": 154,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t101",
+        "critterType": "elephant",
+        "layer": 3,
+        "x": 221,
+        "y": 154,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t102",
+        "critterType": "hippo",
+        "layer": 3,
+        "x": 125,
+        "y": 202,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t103",
+        "critterType": "snake",
+        "layer": 3,
+        "x": 173,
+        "y": 202,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t104",
+        "critterType": "rabbit",
+        "layer": 3,
+        "x": 221,
+        "y": 202,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t105",
+        "critterType": "parrot",
+        "layer": 4,
+        "x": 200,
+        "y": 33,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t106",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 200,
+        "y": 81,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t107",
+        "critterType": "panda",
+        "layer": 4,
+        "x": 200,
+        "y": 129,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t108",
+        "critterType": "parrot",
+        "layer": 4,
+        "x": 200,
+        "y": 177,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t109",
+        "critterType": "parrot",
+        "layer": 4,
+        "x": 200,
+        "y": 225,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t110",
+        "critterType": "hippo",
+        "layer": 4,
+        "x": 200,
+        "y": 273,
+        "row": 5,
+        "col": 3
+      },
+      {
+        "id": "t111",
+        "critterType": "pig",
+        "layer": 4,
+        "x": 56,
+        "y": 177,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t112",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 104,
+        "y": 177,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t113",
+        "critterType": "penguin",
+        "layer": 4,
+        "x": 152,
+        "y": 177,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t114",
+        "critterType": "panda",
+        "layer": 4,
+        "x": 248,
+        "y": 177,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t115",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 296,
+        "y": 177,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t116",
+        "critterType": "penguin",
+        "layer": 5,
+        "x": 34,
+        "y": 42,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t117",
+        "critterType": "hippo",
+        "layer": 5,
+        "x": 82,
+        "y": 42,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t118",
+        "critterType": "hippo",
+        "layer": 5,
+        "x": 130,
+        "y": 42,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t119",
+        "critterType": "rabbit",
+        "layer": 5,
+        "x": 178,
+        "y": 42,
+        "row": 0,
+        "col": 3
+      }
+    ]
+  },
+  "2026-06-26": {
+    "easy": [
+      {
+        "id": "t0",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": -8,
+        "y": 2,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t1",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 40,
+        "y": 2,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t2",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 88,
+        "y": 2,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t3",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 136,
+        "y": 2,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t4",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 184,
+        "y": 2,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t5",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -8,
+        "y": 50,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t6",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 40,
+        "y": 50,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t7",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 88,
+        "y": 50,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t8",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 136,
+        "y": 50,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t9",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 184,
+        "y": 50,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t10",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -8,
+        "y": 98,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t11",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 40,
+        "y": 98,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t12",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 88,
+        "y": 98,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t13",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 136,
+        "y": 98,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t14",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 184,
+        "y": 98,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t15",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": -8,
+        "y": 146,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t16",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 40,
+        "y": 146,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t17",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 88,
+        "y": 146,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t18",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 136,
+        "y": 146,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t19",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 184,
+        "y": 146,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t20",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": -8,
+        "y": 194,
+        "row": 4,
+        "col": 0
+      }
+    ],
+    "hard": [
+      {
+        "id": "t0",
+        "critterType": "panda",
+        "layer": 0,
+        "x": -6,
+        "y": 35,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t1",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 42,
+        "y": 35,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t2",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 90,
+        "y": 35,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t3",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 138,
+        "y": 35,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t4",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 186,
+        "y": 35,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t5",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 234,
+        "y": 35,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t6",
+        "critterType": "panda",
+        "layer": 0,
+        "x": -6,
+        "y": 83,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t7",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 42,
+        "y": 83,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t8",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 90,
+        "y": 83,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t9",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 138,
+        "y": 83,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t10",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 186,
+        "y": 83,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t11",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 234,
+        "y": 83,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t12",
+        "critterType": "panda",
+        "layer": 0,
+        "x": -6,
+        "y": 131,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t13",
+        "critterType": "panda",
+        "layer": 0,
+        "x": 42,
+        "y": 131,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t14",
+        "critterType": "panda",
+        "layer": 0,
+        "x": 90,
+        "y": 131,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t15",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 138,
+        "y": 131,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t16",
+        "critterType": "panda",
+        "layer": 0,
+        "x": 186,
+        "y": 131,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t17",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 234,
+        "y": 131,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t18",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": -6,
+        "y": 179,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t19",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 42,
+        "y": 179,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t20",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": 90,
+        "y": 179,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t21",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 138,
+        "y": 179,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t22",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 186,
+        "y": 179,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t23",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 234,
+        "y": 179,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t24",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": -6,
+        "y": 227,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t25",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 42,
+        "y": 227,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t26",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 90,
+        "y": 227,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t27",
+        "critterType": "panda",
+        "layer": 0,
+        "x": 138,
+        "y": 227,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t28",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 186,
+        "y": 227,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t29",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 234,
+        "y": 227,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t30",
+        "critterType": "parrot",
+        "layer": 0,
+        "x": -6,
+        "y": 275,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t31",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 42,
+        "y": 275,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "id": "t32",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 90,
+        "y": 275,
+        "row": 5,
+        "col": 2
+      },
+      {
+        "id": "t33",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 138,
+        "y": 275,
+        "row": 5,
+        "col": 3
+      },
+      {
+        "id": "t34",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 186,
+        "y": 275,
+        "row": 5,
+        "col": 4
+      },
+      {
+        "id": "t35",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 234,
+        "y": 275,
+        "row": 5,
+        "col": 5
+      },
+      {
+        "id": "t36",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 13,
+        "y": 16,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t37",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 61,
+        "y": 16,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t38",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": 109,
+        "y": 16,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t39",
+        "critterType": "hippo",
+        "layer": 1,
+        "x": 157,
+        "y": 16,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t40",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 205,
+        "y": 16,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t41",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 13,
+        "y": 64,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t42",
+        "critterType": "giraffe",
+        "layer": 1,
+        "x": 205,
+        "y": 64,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t43",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 13,
+        "y": 112,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t44",
+        "critterType": "elephant",
+        "layer": 1,
+        "x": 205,
+        "y": 112,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t45",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 13,
+        "y": 160,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t46",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 205,
+        "y": 160,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t47",
+        "critterType": "giraffe",
+        "layer": 1,
+        "x": 13,
+        "y": 208,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t48",
+        "critterType": "pig",
+        "layer": 1,
+        "x": 205,
+        "y": 208,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t49",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 13,
+        "y": 256,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t50",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 61,
+        "y": 256,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "id": "t51",
+        "critterType": "hippo",
+        "layer": 1,
+        "x": 109,
+        "y": 256,
+        "row": 5,
+        "col": 2
+      },
+      {
+        "id": "t52",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 157,
+        "y": 256,
+        "row": 5,
+        "col": 3
+      },
+      {
+        "id": "t53",
+        "critterType": "hippo",
+        "layer": 1,
+        "x": 205,
+        "y": 256,
+        "row": 5,
+        "col": 4
+      },
+      {
+        "id": "t54",
+        "critterType": "hippo",
+        "layer": 2,
+        "x": 42,
+        "y": 40,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t55",
+        "critterType": "snake",
+        "layer": 2,
+        "x": 90,
+        "y": 40,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t56",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 138,
+        "y": 40,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t57",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 186,
+        "y": 40,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t58",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 42,
+        "y": 88,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t59",
+        "critterType": "snake",
+        "layer": 2,
+        "x": 90,
+        "y": 88,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t60",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 138,
+        "y": 88,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t61",
+        "critterType": "pig",
+        "layer": 2,
+        "x": 186,
+        "y": 88,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t62",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 42,
+        "y": 136,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t63",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 90,
+        "y": 136,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t64",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 138,
+        "y": 136,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t65",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 186,
+        "y": 136,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t66",
+        "critterType": "panda",
+        "layer": 2,
+        "x": 42,
+        "y": 184,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t67",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 90,
+        "y": 184,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t68",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 138,
+        "y": 184,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t69",
+        "critterType": "elephant",
+        "layer": 2,
+        "x": 186,
+        "y": 184,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t70",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 42,
+        "y": 232,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t71",
+        "critterType": "parrot",
+        "layer": 2,
+        "x": 90,
+        "y": 232,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t72",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 138,
+        "y": 232,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t73",
+        "critterType": "rabbit",
+        "layer": 2,
+        "x": 186,
+        "y": 232,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t74",
+        "critterType": "hippo",
+        "layer": 3,
+        "x": -3,
+        "y": 14,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t75",
+        "critterType": "parrot",
+        "layer": 3,
+        "x": 45,
+        "y": 14,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t76",
+        "critterType": "panda",
+        "layer": 3,
+        "x": 93,
+        "y": 14,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t77",
+        "critterType": "parrot",
+        "layer": 3,
+        "x": 141,
+        "y": 14,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t78",
+        "critterType": "pig",
+        "layer": 3,
+        "x": 189,
+        "y": 14,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t79",
+        "critterType": "penguin",
+        "layer": 3,
+        "x": 237,
+        "y": 14,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t80",
+        "critterType": "hippo",
+        "layer": 3,
+        "x": -3,
+        "y": 62,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t81",
+        "critterType": "monkey",
+        "layer": 3,
+        "x": 237,
+        "y": 62,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t82",
+        "critterType": "hippo",
+        "layer": 3,
+        "x": -3,
+        "y": 110,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t83",
+        "critterType": "rabbit",
+        "layer": 3,
+        "x": 237,
+        "y": 110,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t84",
+        "critterType": "rabbit",
+        "layer": 3,
+        "x": -3,
+        "y": 158,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t85",
+        "critterType": "parrot",
+        "layer": 3,
+        "x": 237,
+        "y": 158,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t86",
+        "critterType": "giraffe",
+        "layer": 3,
+        "x": -3,
+        "y": 206,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t87",
+        "critterType": "panda",
+        "layer": 3,
+        "x": 237,
+        "y": 206,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "id": "t88",
+        "critterType": "parrot",
+        "layer": 3,
+        "x": -3,
+        "y": 254,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t89",
+        "critterType": "snake",
+        "layer": 3,
+        "x": 45,
+        "y": 254,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "id": "t90",
+        "critterType": "giraffe",
+        "layer": 3,
+        "x": 93,
+        "y": 254,
+        "row": 5,
+        "col": 2
+      },
+      {
+        "id": "t91",
+        "critterType": "parrot",
+        "layer": 3,
+        "x": 141,
+        "y": 254,
+        "row": 5,
+        "col": 3
+      },
+      {
+        "id": "t92",
+        "critterType": "elephant",
+        "layer": 3,
+        "x": 189,
+        "y": 254,
+        "row": 5,
+        "col": 4
+      },
+      {
+        "id": "t93",
+        "critterType": "elephant",
+        "layer": 3,
+        "x": 237,
+        "y": 254,
+        "row": 5,
+        "col": 5
+      },
+      {
+        "id": "t94",
+        "critterType": "elephant",
+        "layer": 4,
+        "x": 112,
+        "y": 4,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t95",
+        "critterType": "rabbit",
+        "layer": 4,
+        "x": 112,
+        "y": 52,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t96",
+        "critterType": "panda",
+        "layer": 4,
+        "x": 112,
+        "y": 100,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t97",
+        "critterType": "parrot",
+        "layer": 4,
+        "x": 112,
+        "y": 148,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t98",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": 112,
+        "y": 196,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t99",
+        "critterType": "rabbit",
+        "layer": 4,
+        "x": 112,
+        "y": 244,
+        "row": 5,
+        "col": 2
+      },
+      {
+        "id": "t100",
+        "critterType": "elephant",
+        "layer": 4,
+        "x": 112,
+        "y": 292,
+        "row": 6,
+        "col": 2
+      },
+      {
+        "id": "t101",
+        "critterType": "hippo",
+        "layer": 4,
+        "x": 16,
+        "y": 148,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t102",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": 64,
+        "y": 148,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t103",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 160,
+        "y": 148,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t104",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": 208,
+        "y": 148,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t105",
+        "critterType": "parrot",
+        "layer": 5,
+        "x": 12,
+        "y": 41,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t106",
+        "critterType": "rabbit",
+        "layer": 5,
+        "x": 60,
+        "y": 41,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t107",
+        "critterType": "monkey",
+        "layer": 5,
+        "x": 108,
+        "y": 41,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t108",
+        "critterType": "snake",
+        "layer": 5,
+        "x": 156,
+        "y": 41,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t109",
+        "critterType": "elephant",
+        "layer": 5,
+        "x": 204,
+        "y": 41,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t110",
+        "critterType": "pig",
+        "layer": 5,
+        "x": 12,
+        "y": 89,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t111",
+        "critterType": "parrot",
+        "layer": 5,
+        "x": 60,
+        "y": 89,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t112",
+        "critterType": "elephant",
+        "layer": 5,
+        "x": 108,
+        "y": 89,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t113",
+        "critterType": "hippo",
+        "layer": 5,
+        "x": 156,
+        "y": 89,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t114",
+        "critterType": "panda",
+        "layer": 5,
+        "x": 204,
+        "y": 89,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t115",
+        "critterType": "monkey",
+        "layer": 5,
+        "x": 12,
+        "y": 137,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t116",
+        "critterType": "penguin",
+        "layer": 5,
+        "x": 60,
+        "y": 137,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t117",
+        "critterType": "hippo",
+        "layer": 5,
+        "x": 108,
+        "y": 137,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t118",
+        "critterType": "monkey",
+        "layer": 5,
+        "x": 156,
+        "y": 137,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t119",
+        "critterType": "pig",
+        "layer": 5,
+        "x": 204,
+        "y": 137,
+        "row": 2,
+        "col": 4
+      }
+    ]
+  },
+  "2026-06-27": {
+    "easy": [
+      {
+        "id": "t0",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -9,
+        "y": -14,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t1",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 39,
+        "y": -14,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t2",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 39,
+        "y": 82,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t3",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 87,
+        "y": -14,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t4",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 183,
+        "y": 130,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t5",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 87,
+        "y": 130,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t6",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 39,
+        "y": 130,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t7",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": -9,
+        "y": 178,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t8",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 135,
+        "y": -14,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t9",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 183,
+        "y": 178,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t10",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": -9,
+        "y": 130,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t11",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 39,
+        "y": 178,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t12",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 135,
+        "y": 82,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t13",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 87,
+        "y": 82,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t14",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 135,
+        "y": 34,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t15",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 87,
+        "y": 178,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t16",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 87,
+        "y": 34,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t17",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 183,
+        "y": -14,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t18",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 135,
+        "y": 178,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t19",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 183,
+        "y": 34,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t20",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 39,
+        "y": 34,
+        "row": 1,
+        "col": 1
+      }
+    ],
+    "hard": [
+      {
+        "id": "t0",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 34,
+        "y": 189,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t1",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 274,
+        "y": 93,
+        "row": 0,
+        "col": 6
+      },
+      {
+        "id": "t2",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 130,
+        "y": 141,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t3",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 226,
+        "y": 189,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t4",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 226,
+        "y": 93,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "id": "t5",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 34,
+        "y": 141,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t6",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": -14,
+        "y": 189,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t7",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 130,
+        "y": 93,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t8",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": -14,
+        "y": 93,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t9",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 82,
+        "y": 189,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t10",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 274,
+        "y": 189,
+        "row": 2,
+        "col": 6
+      },
+      {
+        "id": "t11",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 178,
+        "y": 141,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t12",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 178,
+        "y": 93,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t13",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 34,
+        "y": 93,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t14",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 226,
+        "y": 141,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "id": "t15",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 130,
+        "y": 189,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t16",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": -14,
+        "y": 141,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t17",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 82,
+        "y": 141,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t18",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 82,
+        "y": 93,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t19",
+        "critterType": "snake",
+        "layer": 0,
+        "x": 178,
+        "y": 189,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t20",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 274,
+        "y": 141,
+        "row": 1,
+        "col": 6
+      },
+      {
+        "id": "t21",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 235,
+        "y": 95,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t22",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 91,
+        "y": 239,
+        "row": 4,
+        "col": 1
+      },
+      {
+        "id": "t23",
+        "critterType": "pig",
+        "layer": 1,
+        "x": 187,
+        "y": 47,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t24",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": 139,
+        "y": 47,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t25",
+        "critterType": "elephant",
+        "layer": 1,
+        "x": 43,
+        "y": 95,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t26",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 91,
+        "y": 47,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t27",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": 235,
+        "y": 239,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t28",
+        "critterType": "parrot",
+        "layer": 1,
+        "x": 43,
+        "y": 239,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t29",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 43,
+        "y": 47,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t30",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 235,
+        "y": 47,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t31",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 139,
+        "y": 239,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "id": "t32",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 235,
+        "y": 143,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t33",
+        "critterType": "penguin",
+        "layer": 1,
+        "x": 235,
+        "y": 191,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t34",
+        "critterType": "rabbit",
+        "layer": 1,
+        "x": 187,
+        "y": 239,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t35",
+        "critterType": "panda",
+        "layer": 1,
+        "x": 43,
+        "y": 143,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t36",
+        "critterType": "monkey",
+        "layer": 1,
+        "x": 43,
+        "y": 191,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t37",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 106,
+        "y": 130,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t38",
+        "critterType": "snake",
+        "layer": 2,
+        "x": 154,
+        "y": 226,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t39",
+        "critterType": "snake",
+        "layer": 2,
+        "x": 154,
+        "y": 178,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t40",
+        "critterType": "panda",
+        "layer": 2,
+        "x": 202,
+        "y": 130,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t41",
+        "critterType": "snake",
+        "layer": 2,
+        "x": 154,
+        "y": 130,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t42",
+        "critterType": "hippo",
+        "layer": 2,
+        "x": 58,
+        "y": 130,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t43",
+        "critterType": "snake",
+        "layer": 2,
+        "x": 154,
+        "y": 82,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t44",
+        "critterType": "monkey",
+        "layer": 2,
+        "x": 250,
+        "y": 130,
+        "row": 2,
+        "col": 5
+      },
+      {
+        "id": "t45",
+        "critterType": "giraffe",
+        "layer": 2,
+        "x": 154,
+        "y": 34,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t46",
+        "critterType": "penguin",
+        "layer": 2,
+        "x": 10,
+        "y": 130,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t47",
+        "critterType": "penguin",
+        "layer": 3,
+        "x": 145,
+        "y": 290,
+        "row": 6,
+        "col": 3
+      },
+      {
+        "id": "t48",
+        "critterType": "snake",
+        "layer": 3,
+        "x": 145,
+        "y": 2,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t49",
+        "critterType": "penguin",
+        "layer": 3,
+        "x": 1,
+        "y": 146,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t50",
+        "critterType": "elephant",
+        "layer": 3,
+        "x": 145,
+        "y": 194,
+        "row": 4,
+        "col": 3
+      },
+      {
+        "id": "t51",
+        "critterType": "monkey",
+        "layer": 3,
+        "x": 145,
+        "y": 50,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t52",
+        "critterType": "rabbit",
+        "layer": 3,
+        "x": 49,
+        "y": 146,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t53",
+        "critterType": "monkey",
+        "layer": 3,
+        "x": 241,
+        "y": 146,
+        "row": 3,
+        "col": 5
+      },
+      {
+        "id": "t54",
+        "critterType": "giraffe",
+        "layer": 3,
+        "x": 145,
+        "y": 98,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t55",
+        "critterType": "snake",
+        "layer": 3,
+        "x": 97,
+        "y": 146,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t56",
+        "critterType": "elephant",
+        "layer": 3,
+        "x": 145,
+        "y": 146,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t57",
+        "critterType": "rabbit",
+        "layer": 3,
+        "x": 145,
+        "y": 242,
+        "row": 5,
+        "col": 3
+      },
+      {
+        "id": "t58",
+        "critterType": "snake",
+        "layer": 3,
+        "x": 193,
+        "y": 146,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t59",
+        "critterType": "snake",
+        "layer": 3,
+        "x": 289,
+        "y": 146,
+        "row": 3,
+        "col": 6
+      },
+      {
+        "id": "t60",
+        "critterType": "hippo",
+        "layer": 4,
+        "x": 152,
+        "y": 80,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t61",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 104,
+        "y": 128,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t62",
+        "critterType": "monkey",
+        "layer": 4,
+        "x": 248,
+        "y": 128,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t63",
+        "critterType": "elephant",
+        "layer": 4,
+        "x": 56,
+        "y": 176,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t64",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": 152,
+        "y": 128,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t65",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": 248,
+        "y": 80,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t66",
+        "critterType": "hippo",
+        "layer": 4,
+        "x": 152,
+        "y": 176,
+        "row": 2,
+        "col": 2
+      },
+      {
+        "id": "t67",
+        "critterType": "elephant",
+        "layer": 4,
+        "x": 152,
+        "y": 224,
+        "row": 3,
+        "col": 2
+      },
+      {
+        "id": "t68",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 104,
+        "y": 80,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t69",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 200,
+        "y": 224,
+        "row": 3,
+        "col": 3
+      },
+      {
+        "id": "t70",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": 200,
+        "y": 80,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t71",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": 200,
+        "y": 176,
+        "row": 2,
+        "col": 3
+      },
+      {
+        "id": "t72",
+        "critterType": "rabbit",
+        "layer": 4,
+        "x": 56,
+        "y": 80,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t73",
+        "critterType": "rabbit",
+        "layer": 4,
+        "x": 104,
+        "y": 176,
+        "row": 2,
+        "col": 1
+      },
+      {
+        "id": "t74",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": 248,
+        "y": 224,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t75",
+        "critterType": "giraffe",
+        "layer": 4,
+        "x": 56,
+        "y": 224,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t76",
+        "critterType": "pig",
+        "layer": 4,
+        "x": 248,
+        "y": 176,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t77",
+        "critterType": "parrot",
+        "layer": 4,
+        "x": 200,
+        "y": 128,
+        "row": 1,
+        "col": 3
+      },
+      {
+        "id": "t78",
+        "critterType": "penguin",
+        "layer": 4,
+        "x": 56,
+        "y": 128,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t79",
+        "critterType": "snake",
+        "layer": 4,
+        "x": 104,
+        "y": 224,
+        "row": 3,
+        "col": 1
+      },
+      {
+        "id": "t80",
+        "critterType": "monkey",
+        "layer": 5,
+        "x": 193,
+        "y": 27,
+        "row": 0,
+        "col": 3
+      },
+      {
+        "id": "t81",
+        "critterType": "rabbit",
+        "layer": 5,
+        "x": 49,
+        "y": 219,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "id": "t82",
+        "critterType": "snake",
+        "layer": 5,
+        "x": 49,
+        "y": 123,
+        "row": 2,
+        "col": 0
+      },
+      {
+        "id": "t83",
+        "critterType": "rabbit",
+        "layer": 5,
+        "x": 241,
+        "y": 267,
+        "row": 5,
+        "col": 4
+      },
+      {
+        "id": "t84",
+        "critterType": "rabbit",
+        "layer": 5,
+        "x": 49,
+        "y": 267,
+        "row": 5,
+        "col": 0
+      },
+      {
+        "id": "t85",
+        "critterType": "rabbit",
+        "layer": 5,
+        "x": 49,
+        "y": 171,
+        "row": 3,
+        "col": 0
+      },
+      {
+        "id": "t86",
+        "critterType": "panda",
+        "layer": 5,
+        "x": 49,
+        "y": 75,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t87",
+        "critterType": "elephant",
+        "layer": 5,
+        "x": 49,
+        "y": 27,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t88",
+        "critterType": "monkey",
+        "layer": 5,
+        "x": 241,
+        "y": 123,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "id": "t89",
+        "critterType": "rabbit",
+        "layer": 5,
+        "x": 241,
+        "y": 27,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "id": "t90",
+        "critterType": "snake",
+        "layer": 5,
+        "x": 97,
+        "y": 267,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "id": "t91",
+        "critterType": "elephant",
+        "layer": 5,
+        "x": 145,
+        "y": 27,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t92",
+        "critterType": "giraffe",
+        "layer": 5,
+        "x": 97,
+        "y": 27,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t93",
+        "critterType": "monkey",
+        "layer": 5,
+        "x": 241,
+        "y": 75,
+        "row": 1,
+        "col": 4
+      },
+      {
+        "id": "t94",
+        "critterType": "hippo",
+        "layer": 5,
+        "x": 241,
+        "y": 171,
+        "row": 3,
+        "col": 4
+      },
+      {
+        "id": "t95",
+        "critterType": "rabbit",
+        "layer": 5,
+        "x": 145,
+        "y": 267,
+        "row": 5,
+        "col": 2
+      },
+      {
+        "id": "t96",
+        "critterType": "elephant",
+        "layer": 5,
+        "x": 193,
+        "y": 267,
+        "row": 5,
+        "col": 3
+      },
+      {
+        "id": "t97",
+        "critterType": "penguin",
+        "layer": 5,
+        "x": 241,
+        "y": 219,
+        "row": 4,
+        "col": 4
+      },
+      {
+        "id": "t98",
+        "critterType": "giraffe",
+        "layer": 6,
+        "x": 104,
+        "y": 118,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "id": "t99",
+        "critterType": "penguin",
+        "layer": 6,
+        "x": 152,
+        "y": 118,
+        "row": 0,
+        "col": 1
+      },
+      {
+        "id": "t100",
+        "critterType": "monkey",
+        "layer": 6,
+        "x": 200,
+        "y": 166,
+        "row": 1,
+        "col": 2
+      },
+      {
+        "id": "t101",
+        "critterType": "pig",
+        "layer": 6,
+        "x": 152,
+        "y": 166,
+        "row": 1,
+        "col": 1
+      },
+      {
+        "id": "t102",
+        "critterType": "elephant",
+        "layer": 6,
+        "x": 200,
+        "y": 118,
+        "row": 0,
+        "col": 2
+      },
+      {
+        "id": "t103",
+        "critterType": "penguin",
+        "layer": 6,
+        "x": 104,
+        "y": 166,
+        "row": 1,
+        "col": 0
+      },
+      {
+        "id": "t104",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 192,
+        "y": 864,
+        "row": 60,
+        "col": 4
+      },
+      {
+        "id": "t105",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 240,
+        "y": 864,
+        "row": 60,
+        "col": 5
+      },
+      {
+        "id": "t106",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 288,
+        "y": 864,
+        "row": 60,
+        "col": 6
+      },
+      {
+        "id": "t107",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 336,
+        "y": 864,
+        "row": 60,
+        "col": 7
+      },
+      {
+        "id": "t108",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 384,
+        "y": 864,
+        "row": 60,
+        "col": 8
+      },
+      {
+        "id": "t109",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 432,
+        "y": 864,
+        "row": 60,
+        "col": 9
+      },
+      {
+        "id": "t110",
+        "critterType": "giraffe",
+        "layer": 0,
+        "x": 0,
+        "y": 912,
+        "row": 61,
+        "col": 0
+      },
+      {
+        "id": "t111",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 48,
+        "y": 912,
+        "row": 61,
+        "col": 1
+      },
+      {
+        "id": "t112",
+        "critterType": "monkey",
+        "layer": 0,
+        "x": 96,
+        "y": 912,
+        "row": 61,
+        "col": 2
+      },
+      {
+        "id": "t113",
+        "critterType": "penguin",
+        "layer": 0,
+        "x": 144,
+        "y": 912,
+        "row": 61,
+        "col": 3
+      },
+      {
+        "id": "t114",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 192,
+        "y": 912,
+        "row": 61,
+        "col": 4
+      },
+      {
+        "id": "t115",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 240,
+        "y": 912,
+        "row": 61,
+        "col": 5
+      },
+      {
+        "id": "t116",
+        "critterType": "hippo",
+        "layer": 0,
+        "x": 288,
+        "y": 912,
+        "row": 61,
+        "col": 6
+      },
+      {
+        "id": "t117",
+        "critterType": "elephant",
+        "layer": 0,
+        "x": 336,
+        "y": 912,
+        "row": 61,
+        "col": 7
+      },
+      {
+        "id": "t118",
+        "critterType": "rabbit",
+        "layer": 0,
+        "x": 384,
+        "y": 912,
+        "row": 61,
+        "col": 8
+      },
+      {
+        "id": "t119",
+        "critterType": "pig",
+        "layer": 0,
+        "x": 432,
+        "y": 912,
+        "row": 61,
+        "col": 9
+      }
+    ]
+  }
+}

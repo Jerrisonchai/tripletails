@@ -195,6 +195,23 @@ const Board = {
     return this.tiles;
   },
 
+  // Load pre-generated tiles directly (no generation, just setup)
+  loadBoard(difficulty, tileData) {
+    this._readTileSize();
+    this.tiles = tileData.map(t => ({
+      id: t.id,
+      critterType: t.critterType,
+      layer: t.layer,
+      x: t.x,
+      y: t.y,
+      row: t.row || 0,
+      col: t.col || 0,
+      blocked: false,
+      brightness: 1.0,
+    }));
+    console.log(`[Board] loadBoard: ${this.tiles.length} tiles for ${difficulty}`);
+  },
+
   _computeBlocking() {
     if (this.tileSizePx === undefined) {
       console.error('[Board] tileSizePx is undefined!');

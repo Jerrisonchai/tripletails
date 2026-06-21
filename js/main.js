@@ -46,7 +46,7 @@ const App = {
   },
 
   // ── Game Actions ──
-  startGame(difficulty) {
+  async startGame(difficulty) {
     Audio.resume();
     this.currentDifficulty = difficulty;
     this.gameStartTime = Date.now();

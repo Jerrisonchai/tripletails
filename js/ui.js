@@ -101,13 +101,13 @@ const UI = {
   },
 
   // ── Game Screen ──
-  showGame(difficulty) {
+  async showGame(difficulty) {
     // Initialize board
     Board.init(document.getElementById('board-container'));
     Matching.init();
 
-    // Set game state
-    Generator.generate(difficulty);
+    // Generate board (may load from daily.json)
+    await Generator.generate(difficulty);
     Board.render();
     Matching.init();
     UI.updateTileCounter();

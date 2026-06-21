@@ -1,15 +1,15 @@
-// generator.js — TripleTails v1.1
-// Daily board generator with solver verification.
-// Phase 3: Guaranteed solvability via backtracking solver.
+// generator.js — TripleTails v1.2
+// Phase 3.1: Pre-generated daily boards from data/daily.json
+// Falls back to generator+solver only if daily.json is unavailable
 const Generator = {
-  // Seeded random (simple LCG) for deterministic daily boards
   _seed: 0,
+  _dailyCache: null,
+
   _seedRandom() {
     this._seed = (this._seed * 16807 + 0) % 2147483647;
     return (this._seed - 1) / 2147483646;
   },
 
-  // Override Math.random for deterministic generation
   _patchRandom() {
     const self = this;
     Math.random = function() {
@@ -18,65 +18,59 @@ const Generator = {
     };
   },
 
-  setDailySeed() {
-    const day = App._gameDay();
-    this._seed = (day * 2654435761 + 20260620) % 2147483647;
-    this._patchRandom();
+  async loadDaily() {
+    if (this._dailyCache) return this._dailyCache;
+    try {
+      const resp = await fetch('data/daily.json');
+      if (resp.ok) {
+        this._dailyCache = await resp.json();
+        console.log('[Generator] Loaded daily.json with', Object.keys(this._dailyCache).length, 'days');
+        return this._dailyCache;
+      }
+    } catch (e) {
+      console.warn('[Generator] Could not load daily.json, will generate live:', e.message);
+    }
+    return null;
   },
 
-  // Main generate: guaranteed solvable
-  generate(difficulty) {
-    this.setDailySeed();
-    const config = Board.LAYER_CONFIGS[difficulty];
-    console.log(`[Generator] Generating ${difficulty} board (${config.totalLayers} layers, target ${config.totalTileTarget} tiles, ${config.typeCount} types)`);
+  async generate(difficulty) {
+    // Try pre-generated daily boards first
+    const daily = await this.loadDaily();
+    const todayStr = this._todayStr();
 
-    const maxRetries = difficulty === 'easy' ? 50 : 200;
-    const solverTimeout = difficulty === 'easy' ? 5000 : 45000;
-
-    for (let attempt = 1; attempt <= maxRetries; attempt++) {
-      // Reset seed for consistent retries (same seed = same board)
-      this.setDailySeed();
-      // Advance seed by attempt to get different boards
-      for (let i = 0; i < attempt * 100; i++) this._seedRandom();
-
-      // Generate candidate board
-      let totalTiles = config.totalTileTarget;
-      const remainder = totalTiles % 3;
-      if (remainder !== 0) totalTiles += (3 - remainder);
-
-      const pool = Tiles.generatePool(totalTiles, config.typeCount);
-      Board.generate(difficulty, pool);
-      const tiles = Board.tiles;
-
-      console.log(`[Generator] Attempt ${attempt}: ${tiles.length} tiles, verifying...`);
-
-      // Verify solvability
-      const solution = Solver.solve(tiles, solverTimeout);
-      if (solution) {
-        console.log(`[Generator] SOLVABLE on attempt ${attempt}! (${solution.length} moves)`);
-        Board._solution = solution;
-        return tiles;
+    if (daily && daily[todayStr]) {
+      const board = daily[todayStr][difficulty];
+      if (board && board.length > 0) {
+        console.log(`[Generator] Using pre-generated ${difficulty} board for ${todayStr} (${board.length} tiles)`);
+        Board.loadBoard(difficulty, board);
+        return board;
       }
-
-      console.log(`[Generator] Attempt ${attempt}: unsolvable, retrying...`);
+      console.warn(`[Generator] No pre-generated ${difficulty} board for ${todayStr}, falling back`);
     }
 
-    // Fallback: use last generated board even if unsolvable (shouldn't happen)
-    console.warn(`[Generator] WARNING: Could not generate solvable board after ${maxRetries} attempts!`);
-    return Board.tiles;
+    // Fallback: live generation + solver
+    console.log('[Generator] Live generation fallback...');
+    return this._generateLive(difficulty);
   },
 
-  // Pre-generate daily boards (used by build script)
-  preGenerateDaily(difficulty, daySeed, maxRetries = 100) {
-    // Override seed with specific day
-    this._seed = (daySeed * 2654435761 + 20260620) % 2147483647;
-    this._patchRandom();
+  _todayStr() {
+    const d = new Date();
+    // Use UTC+8 (MYT)
+    const local = new Date(d.getTime() + 8 * 60 * 60 * 1000);
+    const yyyy = local.getUTCFullYear();
+    const mm = String(local.getUTCMonth() + 1).padStart(2, '0');
+    const dd = String(local.getUTCDate()).padStart(2, '0');
+    return `${yyyy}-${mm}-${dd}`;
+  },
 
+  _generateLive(difficulty) {
     const config = Board.LAYER_CONFIGS[difficulty];
-    const solverTimeout = difficulty === 'easy' ? 10000 : 60000;
+    const maxRetries = difficulty === 'easy' ? 50 : 200;
+    const solverTimeout = difficulty === 'easy' ? 5000 : 30000;
 
     for (let attempt = 1; attempt <= maxRetries; attempt++) {
-      this._seed = (daySeed * 2654435761 + 20260620 + attempt * 999983) % 2147483647;
+      // Seed from date + attempt
+      this._seed = (App._gameDay() * 2654435761 + 20260620 + attempt * 999983) % 2147483647;
       this._patchRandom();
 
       let totalTiles = config.totalTileTarget;
@@ -89,9 +83,14 @@ const Generator = {
 
       const solution = Solver.solve(tiles, solverTimeout);
       if (solution) {
-        return { tiles, solution, attempt };
+        console.log(`[Generator] Live ${difficulty} solvable on attempt ${attempt} (${tiles.length} tiles)`);
+        Board._solution = solution;
+        return tiles;
       }
+      console.log(`[Generator] Live attempt ${attempt}: unsolvable`);
     }
-    return null;
+
+    console.warn(`[Generator] WARNING: Could not generate solvable ${difficulty} board!`);
+    return Board.tiles;
   }
 };
