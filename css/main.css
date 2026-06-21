@@ -406,6 +406,8 @@ body {
 }
 .booster-btn:active { transform: scale(0.9); }
 .booster-btn--empty { opacity: 0.35; pointer-events: none; }
+.booster-btn--premium { background: linear-gradient(135deg, #3a1c61, #5b2d8e); border-color: rgba(255,215,0,0.3); }
+.booster-btn--premium.booster-btn--empty { opacity: 0.25; }
 .booster-count {
   position: absolute;
   top: -4px;

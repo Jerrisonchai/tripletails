@@ -12,9 +12,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css?v=10">
-<link rel="stylesheet" href="css/animations.css?v=10">
-<link rel="stylesheet" href="css/critter-designs.css?v=10">
+<link rel="stylesheet" href="css/main.css?v=11">
+<link rel="stylesheet" href="css/animations.css?v=11">
+<link rel="stylesheet" href="css/critter-designs.css?v=11">
 <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -73,9 +73,11 @@
       <div class="bar-slot" data-slot="6"></div>
     </div>
     <div class="booster-bar" id="booster-bar">
-      <button class="booster-btn" id="btn-shuffle" onclick="App.useBooster('shuffle')">🔀<span class="booster-count">0</span></button>
-      <button class="booster-btn" id="btn-undo" onclick="App.useBooster('undo')">↩️<span class="booster-count">0</span></button>
-      <button class="booster-btn" id="btn-eject" onclick="App.useBooster('eject')">📤<span class="booster-count">0</span></button>
+      <button class="booster-btn" id="btn-shuffle" onclick="Boosters.dispatch('shuffle')">🔀<span class="booster-count">0</span></button>
+      <button class="booster-btn" id="btn-undo" onclick="Boosters.dispatch('undo')">↩️<span class="booster-count">0</span></button>
+      <button class="booster-btn" id="btn-eject" onclick="Boosters.dispatch('eject')">📤<span class="booster-count">0</span></button>
+      <button class="booster-btn booster-btn--premium" id="btn-peek" onclick="Boosters.dispatch('peek')">🔍<span class="booster-count">0</span></button>
+      <button class="booster-btn booster-btn--premium" id="btn-automatch" onclick="Boosters.dispatch('autoMatch')">⚡<span class="booster-count">0</span></button>
     </div>
   </div>
 
@@ -166,15 +168,16 @@
 <!-- Hidden admin gear -->
 <div id="admin-gear" onclick="App.adminTap()" title="⚙️">⚙️</div>
 
-<script src="js/storage.js?v=10"></script>
-<script src="js/audio.js?v=10"></script>
-<script src="js/tiles.js?v=10"></script>
-<script src="js/board.js?v=10"></script>
-<script src="js/input.js?v=10"></script>
-<script src="js/matching.js?v=10"></script>
-<script src="js/solver.js?v=10"></script>
-<script src="js/generator.js?v=10"></script>
-<script src="js/ui.js?v=10"></script>
-<script src="js/main.js?v=10"></script>
+<script src="js/storage.js?v=11"></script>
+<script src="js/audio.js?v=11"></script>
+<script src="js/tiles.js?v=11"></script>
+<script src="js/board.js?v=11"></script>
+<script src="js/input.js?v=11"></script>
+<script src="js/matching.js?v=11"></script>
+<script src="js/boosters.js?v=11"></script>
+<script src="js/solver.js?v=11"></script>
+<script src="js/generator.js?v=11"></script>
+<script src="js/ui.js?v=11"></script>
+<script src="js/main.js?v=11"></script>
 </body>
 </html>

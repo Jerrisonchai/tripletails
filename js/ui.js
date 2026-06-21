@@ -126,10 +126,11 @@ const UI = {
 
   updateBoosterBar() {
     const inv = Storage.getInventory();
-    ['shuffle', 'undo', 'eject'].forEach(type => {
-      const btn = document.getElementById(`btn-${type}`);
-      const count = document.getElementById(`btn-${type}`).querySelector('.booster-count');
-      if (count) count.textContent = inv[type] || 0;
+    ['shuffle', 'undo', 'eject', 'peek', 'autoMatch'].forEach(type => {
+      const btn = document.getElementById(`btn-${type === 'autoMatch' ? 'automatch' : type}`);
+      if (!btn) return;
+      const countEl = btn.querySelector('.booster-count');
+      if (countEl) countEl.textContent = inv[type] || 0;
       if (inv[type] > 0) btn.classList.remove('booster-btn--empty');
       else btn.classList.add('booster-btn--empty');
     });

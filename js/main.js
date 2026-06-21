@@ -13,6 +13,7 @@ const App = {
     this._setupDailyReset();
     UI.init();
     Generator.setDailySeed();
+    Boosters.init();
     this._setupAdminGear();
     console.log('🦊 TripleTails v1.0 initialized');
     console.log(`   Day ${this._gameDay()}, Seed: ${Generator._seed}`);
@@ -35,12 +36,6 @@ const App = {
       progress.attempts = 0;
       progress.bestRemaining = 0;
       progress.lastPlayDate = today;
-      // Reset daily free boosters
-      const inv = Storage.getInventory();
-      inv.shuffle = 1;
-      inv.undo = 1;
-      inv.eject = 1;
-      Storage.setInventory(inv);
       Storage.setProgress(progress);
     }
   },
@@ -52,12 +47,8 @@ const App = {
     this.gameStartTime = Date.now();
     this.matchCount = 0;
 
-    // Ensure daily boosters
-    const inv = Storage.getInventory();
-    if (inv.shuffle < 1) inv.shuffle = 1;
-    if (inv.undo < 1) inv.undo = 1;
-    if (inv.eject < 1) inv.eject = 1;
-    Storage.setInventory(inv);
+    // Ensure daily free boosters
+    Boosters._assignFreeDaily();
 
     UI.showGame(difficulty);
     this._startTimer();
@@ -90,32 +81,7 @@ const App = {
     UI.retryGame();
   },
 
-  useBooster(type) {
-    Audio.resume();
-    const inv = Storage.getInventory();
-    if (inv[type] <= 0) {
-      Audio.error();
-      return;
-    }
-
-    const used = Storage.useBooster(type);
-    if (!used) return;
-
-    Audio.booster();
-    switch (type) {
-      case 'shuffle':
-        Board.shuffle();
-        break;
-      case 'undo':
-        Matching.undoLast();
-        break;
-      case 'eject':
-        Matching.ejectThree();
-        break;
-    }
-
-    UI.updateBoosterBar();
-  },
+  // Removed — Boosters.dispatch() handles this
 
   // ── Screen Navigation ──
   showScreen(name) {
@@ -143,11 +109,13 @@ const App = {
       inv.shuffle = 99;
       inv.undo = 99;
       inv.eject = 99;
+      inv.peek = 99;
+      inv.autoMatch = 99;
       Storage.setInventory(inv);
 
       // Update UI
       UI.updateCoins();
-      UI.updateBoosterBar();
+      UI.updateBoosterButtons();
 
       // Show admin badge
       const gear = document.getElementById('admin-gear');
@@ -182,7 +150,8 @@ const INFO_CONTENT = {
   boosters: `
     <h3>⚡ BOOSTERS</h3>
     <p>Every game you get <strong>1 FREE</strong> of each:</p>
-    <p>🔀 <strong>Shuffle</strong> — Randomize all remaining tiles<br>↩️ <strong>Undo</strong> — Send last tile back to the board<br>📤 <strong>Eject</strong> — Return 3 tiles from bar to board</p>
+    <p>🔀 <strong>Shuffle</strong> — Randomize all remaining critter types<br>↩️ <strong>Undo</strong> — Send last tile back to the board<br>📤 <strong>Eject</strong> — Return 3 tiles from bar to board</p>
+    <p>Buy in Shop (Coming Phase 5):<br>🔍 <strong>Peek</strong> — See hidden tiles for 3 seconds<br>⚡ <strong>Auto-Match</strong> — Auto-select next matching triple</p>
     <p><strong>🪙 EARNING COINS</strong><br>Easy complete → 50 🪙<br>Hard complete → 200 🪙<br>First Hard win → 500 🪙</p>
     <p><strong>🛒 SHOP</strong> (Coming Phase 5)<br>Buy booster packs with coins<br>Unlock themed tile collections</p>
   `,
