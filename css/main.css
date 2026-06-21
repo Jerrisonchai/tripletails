@@ -706,3 +706,85 @@ body {
   color: var(--clr-fg);
   text-align: center;
 }
+
+/* ── Collections Screen ── */
+.collections-body {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.collection-card {
+  background: var(--clr-surface);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  border: 2px solid transparent;
+  transition: border-color var(--dur-fast);
+}
+.collection-card--active {
+  border-color: var(--clr-accent);
+  background: linear-gradient(135deg, rgba(255,215,0,0.08), var(--clr-surface));
+}
+.collection-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.collection-card-name {
+  font-weight: 700;
+  font-size: 15px;
+}
+.collection-card-rarity {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.collection-card-rarity.common { background: #333; color: #aaa; }
+.collection-card-rarity.uncommon { background: #1a3a5c; color: #4af; }
+.collection-card-rarity.rare { background: #3a1a5c; color: #c4f; }
+.collection-card-desc {
+  font-size: 12px;
+  color: var(--clr-fg-mid);
+  margin-bottom: 8px;
+}
+.collection-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-bottom: 10px;
+}
+.collection-tile {
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.collection-card-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.collection-badge {
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+.collection-badge.active {
+  background: #2d5a2d;
+  color: #8f8;
+}
+.collection-badge.price {
+  background: #333;
+  color: var(--clr-accent);
+}
+.btn-sm {
+  font-size: 12px !important;
+  padding: 6px 14px !important;
+  min-width: auto !important;
+}
+.btn--disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}

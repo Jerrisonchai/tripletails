@@ -15,6 +15,7 @@ const App = {
     Generator.setDailySeed();
     Boosters.init();
     Shop.init();
+    Collections.init();
     this._setupAdminGear();
     console.log('🦊 TripleTails v1.0 initialized');
     console.log(`   Day ${this._gameDay()}, Seed: ${Generator._seed}`);

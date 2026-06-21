@@ -46,6 +46,7 @@ const Shop = {
         if (panel) panel.classList.add('shop-panel--active');
         if (panelType === 'booster') this.renderBoosterPanel();
         if (panelType === 'coins') this.renderCoinsPanel();
+        if (panelType === 'collection') this.renderCollectionsTab();
       });
     });
     // Confirm dialog
@@ -159,5 +160,46 @@ const Shop = {
     </div>`;
 
     container.innerHTML = html;
-  }
+  },
+
+  // ── Collections Tab (Shop) ──
+  renderCollectionsTab() {
+    const container = document.getElementById('shop-content-collection');
+    if (!container) return;
+    const active = Collections.getActive();
+    const coins = Storage.getCoins();
+
+    let html = '<div class="shop-section-title">🎨 Tile Skin Collections</div>';
+    html += '<p class="shop-subtitle">Change how your critters look in-game</p>';
+
+    for (const [key, col] of Object.entries(Collections.COLLECTIONS)) {
+      const isActive = key === active;
+      const isUnlocked = col.unlocked;
+      const canBuy = !isUnlocked && coins >= col.price;
+
+      html += `<div class="shop-item">
+        <div class="shop-item-header">
+          <span class="shop-item-name">${col.name}</span>
+          <span class="shop-item-owned">${col.rarity} · ${col.description}</span>
+        </div>
+        <div class="shop-packs" style="gap:4px;flex-wrap:wrap">
+          ${Tiles.TYPES.slice(0,6).map(t => `<span style="width:28px;height:28px;border-radius:6px;display:inline-block;${Tiles.getClass(t)};background-size:65% auto;background-position:center 48%;box-shadow:0 1px 2px rgba(0,0,0,0.3)"></span>`).join('')}
+        </div>
+        <div style="margin-top:8px;display:flex;justify-content:space-between;align-items:center">`;
+      if (isActive) {
+        html += '<span class="collection-badge active" style="background:#2d5a2d;color:#8f8;padding:3px 10px;border-radius:12px;font-size:12px">✅ Equipped</span>';
+      } else if (isUnlocked) {
+        html += `<button class="btn btn-play btn-sm" onclick="Collections.setActive('${key}');Shop.renderCollectionsTab();UI.renderCollections();">👗 Equip</button>`;
+      } else {
+        html += `<span class="collection-badge price" style="background:#333;color:var(--clr-accent);padding:3px 10px;border-radius:12px;font-size:12px">🪙 ${col.price}</span>`;
+        if (canBuy) {
+          html += `<button class="btn btn-play btn-sm" onclick="if(Collections.purchase('${key}').success){Shop.refresh();UI.renderCollections();}">🛒 Buy</button>`;
+        } else {
+          html += `<button class="btn btn-play btn-sm btn--disabled" disabled>Need ${col.price - coins} 🪙</button>`;
+        }
+      }
+      html += '</div></div>';
+    }
+    container.innerHTML = html;
+  },
 };

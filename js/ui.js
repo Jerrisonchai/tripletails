@@ -24,6 +24,7 @@ const UI = {
     if (name === 'home') this.updateHome();
     if (name === 'leaderboard') this._renderLeaderboardPlaceholder();
     if (name === 'shop') Shop.refresh();
+    if (name === 'collections') this.renderCollections();
   },
 
   _bindNavButtons() {
@@ -240,5 +241,44 @@ const UI = {
   _renderLeaderboardPlaceholder() {
     const el = document.getElementById('leaderboard-list');
     if (el) el.innerHTML = '<div class="placeholder-text">🏆 Leaderboard<br><small>Coming in Phase 7</small></div>';
-  }
+  },
+
+  renderCollections() {
+    const container = document.getElementById('collections-content');
+    if (!container) return;
+    const active = Collections.getActive();
+    const coins = Storage.getCoins();
+
+    let html = '';
+    for (const [key, col] of Object.entries(Collections.COLLECTIONS)) {
+      const isActive = key === active;
+      const isUnlocked = col.unlocked;
+      const canBuy = !isUnlocked && coins >= col.price;
+
+      html += '<div class="collection-card ' + (isActive ? 'collection-card--active' : '') + '">';
+      html += '<div class="collection-card-header"><span class="collection-card-name">' + col.name + '</span>';
+      html += '<span class="collection-card-rarity ' + col.rarity.toLowerCase() + '">' + col.rarity + '</span></div>';
+      html += '<p class="collection-card-desc">' + col.description + '</p>';
+      html += '<div class="collection-preview">';
+      Tiles.TYPES.forEach(t => {
+        html += '<div class="collection-tile ' + Tiles.getClass(t) + '" style="background-size:70% auto;background-position:center 48%;width:36px;height:36px;border-radius:8px;display:inline-block;margin:3px;box-shadow:0 1px 3px rgba(0,0,0,0.3);position:relative;"></div>';
+      });
+      html += '</div>';
+      html += '<div class="collection-card-actions">';
+      if (isActive) {
+        html += '<span class="collection-badge active">✅ Equipped</span>';
+      } else if (isUnlocked) {
+        html += '<button class="btn btn-play btn-sm" onclick="Collections.setActive(\'' + key + '\');UI.renderCollections()">👗 Equip</button>';
+      } else {
+        html += '<span class="collection-badge price">🪙 ' + col.price + '</span> ';
+        if (canBuy) {
+          html += '<button class="btn btn-play btn-sm" onclick="if(Collections.purchase(\'' + key + '\').success){UI.renderCollections();UI.updateCoins();Shop.refresh()}">🛒 Buy</button>';
+        } else {
+          html += '<button class="btn btn-play btn-sm btn--disabled" disabled>Need ' + (col.price - coins) + ' 🪙</button>';
+        }
+      }
+      html += '</div></div>';
+    }
+    container.innerHTML = html;
+  },
 };
